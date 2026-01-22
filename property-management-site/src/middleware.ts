@@ -2,10 +2,9 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { cookieName, verifyAdminToken } from "@/lib/adminAuth";
 
-export async function proxy(req: NextRequest) {
+export async function middleware(req: NextRequest) {
     const path = req.nextUrl.pathname;
 
-    // allow login routes
     if (path === "/admin/login" || path === "/api/admin/login" || path === "/api/admin/logout") {
         return NextResponse.next();
     }
