@@ -6,33 +6,63 @@ datasource db {
   provider = "postgresql"
 }
 
-model Lead {
-  id        Int        @id @default(autoincrement())
-  email     String
-  phone     String
-  service   String
-  price     Int
-  status    LeadStatus @default(NEW)
-  createdAt DateTime   @default(now())
+model Block {
+  id           Int     @id @default(autoincrement())
+  address      String
+  name         String?
+  floors       Int?
+  contactName  String?
+  contactPhone String?
+  contactEmail String?
 
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  apartments Apartment[]
+
+  @@index([address])
+}
+
+model Apartment {
+  id      Int @id @default(autoincrement())
+  blockId Int
+
+  number   String
+  floor    Int?
+  entrance String?
+
+  ownerName  String?
+  ownerPhone String?
+  ownerEmail String?
+
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  block    Block     @relation(fields: [blockId], references: [id])
   payments Payment[]
+
+  @@unique([blockId, number, entrance])
+  @@index([blockId])
 }
 
 model Payment {
-  id              Int      @id @default(autoincrement())
-  leadId          Int
-  provider        String
-  status          String
-  amount          Int
-  currency        String
+  id          Int @id @default(autoincrement())
+  apartmentId Int
+
+  provider String
+  status   String
+  amount   Int
+  currency String
+
+  periodYear  Int?
+  periodMonth Int?
+
   stripeSessionId String?  @unique
   createdAt       DateTime @default(now())
 
-  lead Lead @relation(fields: [leadId], references: [id])
-}
+  apartment Apartment @relation(fields: [apartmentId], references: [id])
 
-enum LeadStatus {
-  NEW
-  PAID
-  CANCELLED
+  @@index([apartmentId])
 }
