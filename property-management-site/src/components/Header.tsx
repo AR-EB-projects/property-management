@@ -31,7 +31,7 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/pages/plans">
+                <a className="nav-link" href="/plans">
                   {" "}
                   Plans{" "}
                 </a>
