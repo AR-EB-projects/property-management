@@ -13,7 +13,7 @@ export default function AboutUs() {
                                 <li className="nav-item"><a className="nav-link" href="/plans">Plans</a></li>
                                 <li className="nav-item"><a className="nav-link" href="/services">Services</a></li>
                                 <li className="nav-item"><a className="nav-link" href="/properties">Properties</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
+                                <li className="nav-item"><a className="nav-link" href="/about-us">About</a></li>
                                 <li className="nav-item"><a className="nav-link" href="/contact-us">Contact</a></li>
                                 <li className="nav-item"><a className="nav-link" href="/privacy-policy">Privacy Policy</a></li>
                                 <li className="nav-item"><a className="nav-link" href="/terms-and-conditions">Terms &amp; Conditions</a></li>
