@@ -3,7 +3,7 @@
 
 "use client";
 
-export default function Contact() {
+export default function PrivacyPolicy() {
     return (
         <div className="main-content-wrapper">
             <div className="pageBanner">
