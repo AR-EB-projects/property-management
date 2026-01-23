@@ -24,33 +24,11 @@ export default function Header() {
           </button>
           <div className="collapse navbar-collapse home" id="main_nav">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="/pages/about-us">
-                  {" "}
-                  About{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/plans">
-                  {" "}
-                  Plans{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/services">
-                  {" "}
-                  Services{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/properties">
-                  {" "}
-                  Properties{" "}
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link"
+              <li className="nav-item"><a className="nav-link" href="/about-us">About </a></li>
+              <li className="nav-item"><a className="nav-link" href="/plans">Plans </a></li>
+              <li className="nav-item"><a className="nav-link" href="/services">Services </a></li>
+              <li className="nav-item"><a className="nav-link" href="/properties">Properties </a></li>
+              <li className="nav-item dropdown"><a className="nav-link"
                   href="#"
                   id="resources"
                   data-bs-toggle="dropdown"
@@ -59,55 +37,11 @@ export default function Header() {
                   Resources{" "}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="resources">
-                  <li>
-                    <a className="dropdown-item" href="/pages/blog">
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/pages/faq">
-                      FAQ
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/pages/testimonial">
-                      Testimonial
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/pages/error">
-                      Error 404
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/pages/coming-soon">
-                      Coming Soon
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="dropdown-item"
-                      href="/pages/privacy-policy"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="dropdown-item"
-                      href="/pages/terms-and-conditions"
-                    >
-                      Terms &amp; Conditions
-                    </a>
-                  </li>
+                  <li><a className="dropdown-item" href="/privacy-policy">Privacy Policy</a></li>
+                  <li><a className="dropdown-item" href="/terms-and-conditions">Terms &amp; Conditions</a></li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/contact-us">
-                  {" "}
-                  Contact{" "}
-                </a>
-              </li>
+              <li className="nav-item"><a className="nav-link" href="/contact-us">Contact </a></li>
             </ul>
             <div className="d-flex align-items-center">
               <a className="theme-btn btn-white" href="/pages/contact-us">
