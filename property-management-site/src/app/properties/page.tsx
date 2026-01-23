@@ -1,8 +1,9 @@
 
 
+
 "use client";
 
-export default function Services() {
+export default function Properties() {
     return (
         <div className="main-content-wrapper">
             <div className="pageBanner">
@@ -10,137 +11,240 @@ export default function Services() {
                     <div className="row">
                         <div className="col-12 col-md-12 col-lg-12">
                             <div className="pageBanner-inner">
-                                <h2>Services</h2>
+                                <h2>Properties</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* property management */}
-            <div className="section propertyMdone">
+            <div className="section projects">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-12 col-lg-12">
                             <div className="propertyMdone-heading">
-                                <h3>Property management done right!</h3>
+                                <h3>Handpicked Residential Projects</h3>
                                 <p>Lorem ipsum sit amit</p>
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        {/* card 1 */}
                         <div className="col-12 col-md-6 col-lg-6 mb-4">
-                            <div className="propertyMdone-card mdc-1">
-                                <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/ask.png"
-                                    alt="img"
-                                />
-                                <h3>Verified Tenants</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <a className="propertyMdone-km-link" href="#">
-                                    Know More <i className="fa fa-long-arrow-right" />
-                                </a>
-                                <div className="propertyMdone-overlay-img">
+                            <div className="project-card">
+                                <div className="project-card-image">
                                     <img
                                         loading="lazy"
                                         className="img-fluid"
-                                        src="/images/realEstate-img.png"
+                                        src="/images/project-1.jfif"
                                         alt="img"
                                     />
                                 </div>
-                            </div>
-                        </div>
-                        {/* card 2 */}
-                        <div className="col-12 col-md-6 col-lg-6 mb-4">
-                            <div className="propertyMdone-card mdc-2">
-                                <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/ask.png"
-                                    alt="img"
-                                />
-                                <h3>Tenant Management</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <a className="propertyMdone-km-link" href="#">
-                                    Know More <i className="fa fa-long-arrow-right" />
-                                </a>
-                                <div className="propertyMdone-overlay-img">
-                                    <img
-                                        loading="lazy"
-                                        className="img-fluid"
-                                        src="/images/realEstate-img.png"
-                                        alt="img"
-                                    />
+                                <div className="project-card-content">
+                                    <div className="project-card-top">
+                                        <div className="project-card-top-left">
+                                            <span className="pctl-apartment">
+                                                <i className="fa fa-building" />
+                                                Apartment
+                                            </span>
+                                            <span className="pctl-family">
+                                                <i className="fa fa-user" />
+                                                Family
+                                            </span>
+                                        </div>
+                                        <div className="project-card-top-left">
+                                            <a href="#">
+                                                <i className="fa fa-heart" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="project-card-body">
+                                        <a href="#">
+                                            <h3>18730 square feet Land in Pagosa Springs, Colorado</h3>
+                                        </a>
+                                        <h2>$675,000</h2>
+                                        <ul>
+                                            <li>
+                                                <i className="fa fa-bath" />2 bathroom
+                                            </li>
+                                            <li>
+                                                <i className="fa fa-bed" />2 bedroom
+                                            </li>
+                                            <li>
+                                                <i className="fa fa-square-o" />
+                                                18,730 sq.ft
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="project-card-bottom">
+                                        <p>Listing provided by property owner</p>
+                                        <a className="project-card-detail-btn" href="#">
+                                            View Details
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        {/* card 3 */}
                         <div className="col-12 col-md-6 col-lg-6 mb-4">
-                            <div className="propertyMdone-card mdc-3">
-                                <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/ask.png"
-                                    alt="img"
-                                />
-                                <h3>Maintenance &amp; Interiors</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <a className="propertyMdone-km-link" href="#">
-                                    Know More <i className="fa fa-long-arrow-right" />
-                                </a>
-                                <div className="propertyMdone-overlay-img">
+                            <div className="project-card">
+                                <div className="project-card-image">
                                     <img
                                         loading="lazy"
                                         className="img-fluid"
-                                        src="/images/realEstate-img.png"
+                                        src="/images/project-2.jfif"
                                         alt="img"
                                     />
                                 </div>
+                                <div className="project-card-content">
+                                    <div className="project-card-top">
+                                        <div className="project-card-top-left">
+                                            <span className="pctl-apartment">
+                                                <i className="fa fa-building" />
+                                                Apartment
+                                            </span>
+                                            <span className="pctl-family">
+                                                <i className="fa fa-user" />
+                                                Family
+                                            </span>
+                                        </div>
+                                        <div className="project-card-top-left">
+                                            <a href="#">
+                                                <i className="fa fa-heart" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="project-card-body">
+                                        <a href="#">
+                                            <h3>15681 square feet Land in Bend, Oregon</h3>
+                                        </a>
+                                        <h2>$950,000</h2>
+                                        <ul>
+                                            <li>
+                                                <i className="fa fa-bath" />2 bathroom
+                                            </li>
+                                            <li>
+                                                <i className="fa fa-bed" />2 bedroom
+                                            </li>
+                                            <li>
+                                                <i className="fa fa-square-o" />
+                                                15,681 sq.ft
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="project-card-bottom">
+                                        <p>Listing provided by property owner</p>
+                                        <a className="project-card-detail-btn" href="#">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        {/* card 4 */}
                         <div className="col-12 col-md-6 col-lg-6 mb-4">
-                            <div className="propertyMdone-card mdc-4">
-                                <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/ask.png"
-                                    alt="img"
-                                />
-                                <h3>Rent Collection</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <a className="propertyMdone-km-link" href="#">
-                                    Know More <i className="fa fa-long-arrow-right" />
-                                </a>
-                                <div className="propertyMdone-overlay-img">
+                            <div className="project-card">
+                                <div className="project-card-image">
                                     <img
                                         loading="lazy"
                                         className="img-fluid"
-                                        src="/images/realEstate-img.png"
+                                        src="/images/project-3.jfif"
                                         alt="img"
                                     />
+                                </div>
+                                <div className="project-card-content">
+                                    <div className="project-card-top">
+                                        <div className="project-card-top-left">
+                                            <span className="pctl-apartment">
+                                                <i className="fa fa-building" />
+                                                Apartment
+                                            </span>
+                                            <span className="pctl-family">
+                                                <i className="fa fa-user" />
+                                                Family
+                                            </span>
+                                        </div>
+                                        <div className="project-card-top-left">
+                                            <a href="#">
+                                                <i className="fa fa-heart" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="project-card-body">
+                                        <a href="#">
+                                            <h3>134600 square feet Land in Bessemer, Alabama</h3>
+                                        </a>
+                                        <h2>$18,500</h2>
+                                        <ul>
+                                            <li>
+                                                <i className="fa fa-bath" />2 bathroom
+                                            </li>
+                                            <li>
+                                                <i className="fa fa-bed" />2 bedroom
+                                            </li>
+                                            <li>
+                                                <i className="fa fa-square-o" />
+                                                3.09 ac
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="project-card-bottom">
+                                        <p>Listing provided by property owner</p>
+                                        <a className="project-card-detail-btn" href="#">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-6 mb-4">
+                            <div className="project-card">
+                                <div className="project-card-image">
+                                    <img
+                                        loading="lazy"
+                                        className="img-fluid"
+                                        src="/images/project-6.jfif"
+                                        alt="img"
+                                    />
+                                </div>
+                                <div className="project-card-content">
+                                    <div className="project-card-top">
+                                        <div className="project-card-top-left">
+                                            <span className="pctl-apartment">
+                                                <i className="fa fa-building" />
+                                                Apartment
+                                            </span>
+                                            <span className="pctl-family">
+                                                <i className="fa fa-user" />
+                                                Family
+                                            </span>
+                                        </div>
+                                        <div className="project-card-top-left">
+                                            <a href="#">
+                                                <i className="fa fa-heart" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="project-card-body">
+                                        <a href="#">
+                                            <h3>Multi-Family in Jersey City, New Jersey</h3>
+                                        </a>
+                                        <h2>$975,000</h2>
+                                        <ul>
+                                            <li>
+                                                <i className="fa fa-bath" />2 bathroom
+                                            </li>
+                                            <li>
+                                                <i className="fa fa-bed" />2 bedroom
+                                            </li>
+                                            <li>
+                                                <i className="fa fa-square-o" />
+                                                1742 sq.ft
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="project-card-bottom">
+                                        <p>Listing provided by property owner</p>
+                                        <a className="project-card-detail-btn" href="#">
+                                            View Details
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

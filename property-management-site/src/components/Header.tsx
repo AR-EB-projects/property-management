@@ -43,7 +43,7 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/pages/properties">
+                <a className="nav-link" href="/properties">
                   {" "}
                   Properties{" "}
                 </a>
@@ -103,7 +103,7 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/pages/contact-us">
+                <a className="nav-link" href="/contact-us">
                   {" "}
                   Contact{" "}
                 </a>
