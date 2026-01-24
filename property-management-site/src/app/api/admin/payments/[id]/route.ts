@@ -4,11 +4,12 @@ import { prisma } from "@/lib/prisma";
 // GET single payment
 export async function GET(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         const payment = await prisma.payment.findUnique({
-            where: { id: parseInt(params.id) },
+            where: { id: parseInt(id) },
             include: {
                 apartment: {
                     include: {
@@ -38,9 +39,10 @@ export async function GET(
 // PUT update payment
 export async function PUT(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         const body = await req.json();
         const {
             status,
@@ -51,7 +53,7 @@ export async function PUT(
         } = body;
 
         const payment = await prisma.payment.update({
-            where: { id: parseInt(params.id) },
+            where: { id: parseInt(id) },
             data: {
                 status,
                 amount: amount ? parseInt(amount) : undefined,
@@ -87,11 +89,12 @@ export async function PUT(
 // DELETE payment
 export async function DELETE(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         await prisma.payment.delete({
-            where: { id: parseInt(params.id) }
+            where: { id: parseInt(id) }
         });
 
         return NextResponse.json({ message: "Payment deleted successfully" });

@@ -4,11 +4,12 @@ import { prisma } from "@/lib/prisma";
 // GET single apartment
 export async function GET(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         const apartment = await prisma.apartment.findUnique({
-            where: { id: parseInt(params.id) },
+            where: { id: parseInt(id) },
             include: {
                 block: true,
                 payments: {
@@ -37,9 +38,10 @@ export async function GET(
 // PUT update apartment
 export async function PUT(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         const body = await req.json();
         const {
             number,
@@ -52,7 +54,7 @@ export async function PUT(
         } = body;
 
         const apartment = await prisma.apartment.update({
-            where: { id: parseInt(params.id) },
+            where: { id: parseInt(id) },
             data: {
                 number,
                 floor: floor ? parseInt(floor) : null,
@@ -95,12 +97,13 @@ export async function PUT(
 // DELETE apartment
 export async function DELETE(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         // Check if apartment has payments
         const paymentCount = await prisma.payment.count({
-            where: { apartmentId: parseInt(params.id) }
+            where: { apartmentId: parseInt(id) }
         });
 
         if (paymentCount > 0) {
@@ -111,7 +114,7 @@ export async function DELETE(
         }
 
         await prisma.apartment.delete({
-            where: { id: parseInt(params.id) }
+            where: { id: parseInt(id) }
         });
 
         return NextResponse.json({ message: "Apartment deleted successfully" });

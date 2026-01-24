@@ -4,11 +4,12 @@ import { prisma } from "@/lib/prisma";
 // GET single block
 export async function GET(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         const block = await prisma.block.findUnique({
-            where: { id: parseInt(params.id) },
+            where: { id: parseInt(id) },
             include: {
                 apartments: {
                     orderBy: { number: "asc" }
@@ -36,14 +37,15 @@ export async function GET(
 // PUT update block
 export async function PUT(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         const body = await req.json();
         const { address, name, floors, contactName, contactPhone, contactEmail, isActive } = body;
 
         const block = await prisma.block.update({
-            where: { id: parseInt(params.id) },
+            where: { id: parseInt(id) },
             data: {
                 address,
                 name,
@@ -68,12 +70,13 @@ export async function PUT(
 // DELETE block
 export async function DELETE(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
+        const { id } = await params;
         // Check if block has apartments
         const apartmentCount = await prisma.apartment.count({
-            where: { blockId: parseInt(params.id) }
+            where: { blockId: parseInt(id) }
         });
 
         if (apartmentCount > 0) {
@@ -84,7 +87,7 @@ export async function DELETE(
         }
 
         await prisma.block.delete({
-            where: { id: parseInt(params.id) }
+            where: { id: parseInt(id) }
         });
 
         return NextResponse.json({ message: "Block deleted successfully" });
