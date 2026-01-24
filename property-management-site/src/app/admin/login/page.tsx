@@ -26,22 +26,22 @@ export default function AdminLogin() {
         router.push("/admin");
     }
 
-    return (
-        <div style={{ maxWidth: 360, margin: "40px auto" }}>
-            <h1>Admin Login</h1>
-            <form onSubmit={onSubmit}>
-                <input
-                    type="password"
-                    placeholder="Admin password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    style={{ width: "100%", padding: 10, marginTop: 12 }}
-                />
-                <button style={{ width: "100%", padding: 10, marginTop: 12 }}>
-                    Login
-                </button>
-                {err && <p style={{ color: "red" }}>{err}</p>}
-            </form>
-        </div>
-    );
+  return (
+    <div style={{ maxWidth: 360, margin: "40px auto", paddingTop: 100 }}>
+      <h1>Admin Login</h1>
+      <form onSubmit={onSubmit}>
+        <input
+          type="password"
+          placeholder="Admin password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          style={{ width: "100%", padding: 10, marginTop: 12 }}
+        />
+        <button style={{ width: "100%", padding: 10, marginTop: 12 }}>
+          Login
+        </button>
+        {err && <p style={{ color: "red" }}>{err}</p>}
+      </form>
+    </div>
+  );
 }

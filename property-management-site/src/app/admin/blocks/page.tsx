@@ -81,14 +81,21 @@ export default function BlocksPage() {
     };
 
     if (loading) {
-        return <div style={{ padding: 20 }}>Loading...</div>;
+        return <div style={{ padding: 20, paddingTop: 100 }}>Loading...</div>;
     }
 
     return (
-        <div style={{ padding: 20 }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
-                <h1>Blocks Management</h1>
-                <div style={{ display: "flex", gap: 12 }}>
+        <div style={{ padding: 20, paddingTop: 100 }}>
+            <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: 20,
+        }}
+      >
+        <h1>Blocks Management</h1>
+        <div style={{ display: "flex", gap: 12 }}>
                     <button
                         onClick={() => router.push("/admin")}
                         style={{
