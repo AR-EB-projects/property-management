@@ -21,7 +21,7 @@ export async function GET(
 
         if (!payment) {
             return NextResponse.json(
-                { message: "Payment not found" },
+                { message: "Плащането не е намерено" },
                 { status: 404 }
             );
         }
@@ -30,7 +30,7 @@ export async function GET(
     } catch (error) {
         console.error("Error fetching payment:", error);
         return NextResponse.json(
-            { message: "Failed to fetch payment" },
+            { message: "Неуспешно извличане на плащане" },
             { status: 500 }
         );
     }
@@ -80,7 +80,7 @@ export async function PUT(
     } catch (error) {
         console.error("Error updating payment:", error);
         return NextResponse.json(
-            { message: "Failed to update payment" },
+            { message: "Неуспешно обновяване на плащане" },
             { status: 500 }
         );
     }
@@ -97,11 +97,11 @@ export async function DELETE(
             where: { id: parseInt(id) }
         });
 
-        return NextResponse.json({ message: "Payment deleted successfully" });
+        return NextResponse.json({ message: "Плащането е изтрито успешно" });
     } catch (error) {
         console.error("Error deleting payment:", error);
         return NextResponse.json(
-            { message: "Failed to delete payment" },
+            { message: "Неуспешно изтриване на плащане" },
             { status: 500 }
         );
     }

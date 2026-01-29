@@ -55,7 +55,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
         try {
             await onSubmit(formData);
         } catch (err: any) {
-            setError(err.message || "Failed to save apartment");
+            setError(err.message || "Неуспешно запазване на апартамент");
         } finally {
             setLoading(false);
         }
@@ -65,7 +65,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
         <form onSubmit={handleSubmit} style={{ maxWidth: 600 }}>
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Block *
+                    Блок *
                 </label>
                 <select
                     value={formData.blockId}
@@ -74,7 +74,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
                     disabled={!!initialData?.id}
                     style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 >
-                    <option value="">Select a block</option>
+                    <option value="">Изберете блок</option>
                     {blocks.map((block) => (
                         <option key={block.id} value={block.id}>
                             {block.name || block.address}
@@ -85,7 +85,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Apartment Number *
+                    Номер на апартамент *
                 </label>
                 <input
                     type="text"
@@ -98,7 +98,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Floor
+                    Етаж
                 </label>
                 <input
                     type="number"
@@ -110,7 +110,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Entrance
+                    Вход
                 </label>
                 <input
                     type="text"
@@ -122,7 +122,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Owner Name
+                    Име на собственик
                 </label>
                 <input
                     type="text"
@@ -134,7 +134,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Owner Phone
+                    Телефон на собственик
                 </label>
                 <input
                     type="tel"
@@ -146,7 +146,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Owner Email
+                    Имейл на собственик
                 </label>
                 <input
                     type="email"
@@ -164,7 +164,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
                             checked={formData.isActive}
                             onChange={(e) => setFormData({ ...formData, isActive: e.target.checked })}
                         />
-                        <span style={{ fontWeight: "bold" }}>Active</span>
+                        <span style={{ fontWeight: "bold" }}>Активен</span>
                     </label>
                 </div>
             )}
@@ -189,7 +189,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
                         opacity: loading ? 0.6 : 1,
                     }}
                 >
-                    {loading ? "Saving..." : initialData?.id ? "Update" : "Create"}
+                    {loading ? "Запазване..." : initialData?.id ? "Обнови" : "Създай"}
                 </button>
                 <button
                     type="button"
@@ -203,7 +203,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
                         cursor: "pointer",
                     }}
                 >
-                    Cancel
+                    Отказ
                 </button>
             </div>
         </form>

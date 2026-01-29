@@ -19,7 +19,7 @@ export async function GET(
 
         if (!block) {
             return NextResponse.json(
-                { message: "Block not found" },
+                { message: "Блокът не е намерен" },
                 { status: 404 }
             );
         }
@@ -28,7 +28,7 @@ export async function GET(
     } catch (error) {
         console.error("Error fetching block:", error);
         return NextResponse.json(
-            { message: "Failed to fetch block" },
+            { message: "Неуспешно извличане на блок" },
             { status: 500 }
         );
     }
@@ -61,7 +61,7 @@ export async function PUT(
     } catch (error) {
         console.error("Error updating block:", error);
         return NextResponse.json(
-            { message: "Failed to update block" },
+            { message: "Неуспешно обновяване на блок" },
             { status: 500 }
         );
     }
@@ -81,7 +81,7 @@ export async function DELETE(
 
         if (apartmentCount > 0) {
             return NextResponse.json(
-                { message: "Cannot delete block with apartments. Delete apartments first." },
+                { message: "Не може да изтриете блок с апартаменти. Първо изтрийте апартаментите." },
                 { status: 400 }
             );
         }
@@ -90,11 +90,11 @@ export async function DELETE(
             where: { id: parseInt(id) }
         });
 
-        return NextResponse.json({ message: "Block deleted successfully" });
+        return NextResponse.json({ message: "Блокът е изтрит успешно" });
     } catch (error) {
         console.error("Error deleting block:", error);
         return NextResponse.json(
-            { message: "Failed to delete block" },
+            { message: "Неуспешно изтриване на блок" },
             { status: 500 }
         );
     }

@@ -31,7 +31,7 @@ export async function GET(req: Request) {
     } catch (error) {
         console.error("Error fetching apartments:", error);
         return NextResponse.json(
-            { message: "Failed to fetch apartments" },
+            { message: "Неуспешно извличане на апартаменти" },
             { status: 500 }
         );
     }
@@ -53,7 +53,7 @@ export async function POST(req: Request) {
 
         if (!blockId || !number) {
             return NextResponse.json(
-                { message: "Block ID and apartment number are required" },
+                { message: "ID на блок и номер на апартамент са задължителни" },
                 { status: 400 }
             );
         }
@@ -65,7 +65,7 @@ export async function POST(req: Request) {
 
         if (!block) {
             return NextResponse.json(
-                { message: "Block not found" },
+                { message: "Блокът не е намерен" },
                 { status: 404 }
             );
         }
@@ -98,13 +98,13 @@ export async function POST(req: Request) {
         // Handle unique constraint violation
         if (error.code === "P2002") {
             return NextResponse.json(
-                { message: "An apartment with this number and entrance already exists in this block" },
+                { message: "Апартамент с този номер и вход вече съществува в този блок" },
                 { status: 400 }
             );
         }
 
         return NextResponse.json(
-            { message: "Failed to create apartment" },
+            { message: "Неуспешно създаване на апартамент" },
             { status: 500 }
         );
     }

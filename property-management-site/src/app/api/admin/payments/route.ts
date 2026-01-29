@@ -37,7 +37,7 @@ export async function GET(req: Request) {
     } catch (error) {
         console.error("Error fetching payments:", error);
         return NextResponse.json(
-            { message: "Failed to fetch payments" },
+            { message: "Неуспешно извличане на плащания" },
             { status: 500 }
         );
     }
@@ -59,7 +59,7 @@ export async function POST(req: Request) {
 
         if (!apartmentId || !provider || !status || !amount || !currency) {
             return NextResponse.json(
-                { message: "Missing required fields" },
+                { message: "Липсват задължителни полета" },
                 { status: 400 }
             );
         }
@@ -71,7 +71,7 @@ export async function POST(req: Request) {
 
         if (!apartment) {
             return NextResponse.json(
-                { message: "Apartment not found" },
+                { message: "Апартаментът не е намерен" },
                 { status: 404 }
             );
         }
@@ -105,7 +105,7 @@ export async function POST(req: Request) {
     } catch (error) {
         console.error("Error creating payment:", error);
         return NextResponse.json(
-            { message: "Failed to create payment" },
+            { message: "Неуспешно създаване на плащане" },
             { status: 500 }
         );
     }

@@ -60,7 +60,7 @@ export default function BlocksPage() {
     };
 
     const handleDelete = async (id: number) => {
-        if (!confirm("Are you sure you want to delete this block?")) return;
+        if (!confirm("Сигурни ли сте, че искате да изтриете този блок?")) return;
 
         const res = await fetch(`/api/admin/blocks/${id}`, {
             method: "DELETE",
@@ -81,7 +81,7 @@ export default function BlocksPage() {
     };
 
     if (loading) {
-        return <div style={{ padding: 20, paddingTop: 100 }}>Loading...</div>;
+        return <div style={{ padding: 20, paddingTop: 100 }}>Зареждане...</div>;
     }
 
     return (
@@ -94,7 +94,7 @@ export default function BlocksPage() {
           marginBottom: 20,
         }}
       >
-        <h1>Blocks Management</h1>
+        <h1>Управление на блокове</h1>
         <div style={{ display: "flex", gap: 12 }}>
                     <button
                         onClick={() => router.push("/admin")}
@@ -107,7 +107,7 @@ export default function BlocksPage() {
                             cursor: "pointer",
                         }}
                     >
-                        Back to Dashboard
+                        Назад към таблото
                     </button>
                     <button
                         onClick={handleLogout}
@@ -120,7 +120,7 @@ export default function BlocksPage() {
                             cursor: "pointer",
                         }}
                     >
-                        Logout
+                        Изход
                     </button>
                 </div>
             </div>
@@ -138,13 +138,13 @@ export default function BlocksPage() {
                         marginBottom: 20,
                     }}
                 >
-                    + Add New Block
+                    + Добави нов блок
                 </button>
             )}
 
             {showForm && (
                 <div style={{ marginBottom: 30, padding: 20, border: "1px solid #ddd", borderRadius: 8 }}>
-                    <h2>Create New Block</h2>
+                    <h2>Създай нов блок</h2>
                     <BlockForm
                         onSubmit={handleCreate}
                         onCancel={() => setShowForm(false)}
@@ -154,7 +154,7 @@ export default function BlocksPage() {
 
             {editingBlock && (
                 <div style={{ marginBottom: 30, padding: 20, border: "1px solid #ddd", borderRadius: 8 }}>
-                    <h2>Edit Block</h2>
+                    <h2>Редактирай блок</h2>
                     <BlockForm
                         initialData={editingBlock}
                         onSubmit={handleUpdate}
@@ -164,19 +164,19 @@ export default function BlocksPage() {
             )}
 
             <div>
-                <h2>All Blocks ({blocks.length})</h2>
+                <h2>Всички блокове ({blocks.length})</h2>
                 {blocks.length === 0 ? (
-                    <p>No blocks found. Create one to get started.</p>
+                    <p>Няма намерени блокове. Създайте такъв, за да започнете.</p>
                 ) : (
                     <table style={{ width: "100%", borderCollapse: "collapse", marginTop: 20 }}>
                         <thead>
                         <tr style={{ backgroundColor: "#f8f9fa" }}>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Address</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Name</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Floors</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Apartments</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Status</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Actions</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Адрес</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Име</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Етажи</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Апартаменти</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Статус</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Действия</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -194,7 +194,7 @@ export default function BlocksPage() {
                                             backgroundColor: block.isActive ? "#d4edda" : "#f8d7da",
                                             color: block.isActive ? "#155724" : "#721c24",
                                         }}>
-                                            {block.isActive ? "Active" : "Inactive"}
+                                            {block.isActive ? "Активен" : "Неактивен"}
                                         </span>
                                 </td>
                                 <td style={{ padding: 12 }}>
@@ -210,7 +210,7 @@ export default function BlocksPage() {
                                             marginRight: 8,
                                         }}
                                     >
-                                        Edit
+                                        Редактирай
                                     </button>
                                     <button
                                         onClick={() => handleDelete(block.id)}
@@ -223,7 +223,7 @@ export default function BlocksPage() {
                                             cursor: "pointer",
                                         }}
                                     >
-                                        Delete
+                                        Изтрий
                                     </button>
                                 </td>
                             </tr>
