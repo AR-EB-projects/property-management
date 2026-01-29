@@ -1,22 +1,42 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { PaymentStatus } from "@prisma/client";
 
-// GET all payments (with optional filters)
 export async function GET(req: Request) {
     try {
         const { searchParams } = new URL(req.url);
-        const apartmentId = searchParams.get("apartmentId");
-        const blockId = searchParams.get("blockId");
-        const status = searchParams.get("status");
+
+        const apartmentIdParam = searchParams.get("apartmentId");
+        const blockIdParam = searchParams.get("blockId");
+        const statusParam = searchParams.get("status");
+
+        const toOptionalInt = (value: string | null): number | undefined => {
+            if (value == null || value.trim() === "") return undefined;
+            const parsed = Number(value);
+            return Number.isFinite(parsed) ? parsed : undefined;
+        };
+
+        const toOptionalPaymentStatus = (
+            value: string | null
+        ): PaymentStatus | undefined => {
+            if (value == null || value.trim() === "") return undefined;
+            return (Object.values(PaymentStatus) as string[]).includes(value)
+                ? (value as PaymentStatus)
+                : undefined;
+        };
+
+        const apartmentId = toOptionalInt(apartmentIdParam);
+        const blockId = toOptionalInt(blockIdParam);
+        const status = toOptionalPaymentStatus(statusParam);
+
+        const where = {
+            ...(apartmentId !== undefined ? { apartmentId } : {}),
+            ...(status !== undefined ? { status } : {}),
+            ...(blockId !== undefined ? { apartment: { blockId } } : {}),
+        };
 
         const payments = await prisma.payment.findMany({
-            where: {
-                apartmentId: apartmentId ? parseInt(apartmentId) : undefined,
-                status: status || undefined,
-                apartment: blockId ? {
-                    blockId: parseInt(blockId)
-                } : undefined
-            },
+            where,
             include: {
                 apartment: {
                     include: {
@@ -24,13 +44,13 @@ export async function GET(req: Request) {
                             select: {
                                 id: true,
                                 address: true,
-                                name: true
-                            }
-                        }
-                    }
-                }
+                                name: true,
+                            },
+                        },
+                    },
+                },
             },
-            orderBy: { createdAt: "desc" }
+            orderBy: { createdAt: "desc" },
         });
 
         return NextResponse.json(payments);
@@ -43,7 +63,7 @@ export async function GET(req: Request) {
     }
 }
 
-// POST create new payment (manual payment record)
+// ... existing code ...
 export async function POST(req: Request) {
     try {
         const body = await req.json();
