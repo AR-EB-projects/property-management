@@ -52,17 +52,45 @@ model Payment {
   apartmentId Int
 
   provider String
-  status   String
+  method   PaymentMethod @default(OTHER)
+  status   PaymentStatus @default(PENDING)
+
   amount   Int
   currency String
 
   periodYear  Int?
   periodMonth Int?
 
-  stripeSessionId String?  @unique
-  createdAt       DateTime @default(now())
+  stripeSessionId String? @unique
+
+  paidAt    DateTime?
+  reference String?
+  note      String?
+  createdBy String?
+
+  createdAt DateTime @default(now())
 
   apartment Apartment @relation(fields: [apartmentId], references: [id])
 
+  @@unique([apartmentId, periodYear, periodMonth, provider], map: "uniq_period_provider_per_apartment")
   @@index([apartmentId])
+  @@index([provider, status])
+  @@index([periodYear, periodMonth])
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+  CANCELED
+}
+
+enum PaymentMethod {
+  STRIPE
+  EASYPAY_OFFICE
+  EPAY_ONLINE
+  CASH
+  BANK
+  OTHER
 }
