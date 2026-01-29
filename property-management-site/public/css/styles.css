@@ -500,6 +500,10 @@ ul {
     color: #000;
 }
 
+.navbar.fixed-top .navbar-brand img {
+    content: url('/images/logo-black.png');
+}
+
 .dropdown-menu {
     border-radius: 10px;
     border: transparent;
@@ -524,7 +528,7 @@ ul {
 
 .nav-link:focus,
 .nav-link:hover {
-    color: var(--theme-color-1);
+    color: #14C59C;
 }
 
 .page-full {
