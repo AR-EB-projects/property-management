@@ -7,45 +7,45 @@ export default function Footer() {
         <div className="row">
           <div className="col-12 col-md-6 col-lg-2 mb-4">
             <div className="footer-link">
-              <h3 className="footer-heading">Get Started</h3>
+              <h3 className="footer-heading">Започнете</h3>
               <ul className="foolter-link-list">
                 <li className="foolter-link-item">
-                  <a href="#">Visit AssetNest</a>
+                  <a href="#">Посетете AssetNest</a>
                 </li>
                 <li className="foolter-link-item">
-                  <a href="#">Apply Now</a>
+                  <a href="#">Кандидатствайте сега</a>
                 </li>
                 <li className="foolter-link-item">
-                  <a href="#">View tution and Aid</a>
+                  <a href="#">Вижте такси и помощ</a>
                 </li>
                 <li className="foolter-link-item">
-                  <a href="#">Work at AssetNest</a>
+                  <a href="#">Работете в AssetNest</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-2 mb-4">
             <div className="footer-link">
-              <h3 className="footer-heading">Discover</h3>
+              <h3 className="footer-heading">Открийте</h3>
               <ul className="foolter-link-list">
                 <li className="foolter-link-item">
-                  <a href="#">Visit AssetNest</a>
+                  <a href="#">Посетете AssetNest</a>
                 </li>
                 <li className="foolter-link-item">
-                  <a href="#">Apply Now</a>
+                  <a href="#">Кандидатствайте сега</a>
                 </li>
                 <li className="foolter-link-item">
-                  <a href="#">View tution and Aid</a>
+                  <a href="#">Вижте такси и помощ</a>
                 </li>
                 <li className="foolter-link-item">
-                  <a href="#">Work at AssetNest</a>
+                  <a href="#">Работете в AssetNest</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-3 mb-4">
             <div className="footer-social">
-              <h3 className="footer-heading">Social</h3>
+              <h3 className="footer-heading">Социални мрежи</h3>
               <ul className="foolter-social-list">
                 <li className="foolter-link-item">
                   <a href="#">
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
           <div className="col-12 col-md-6 col-lg-2 mb-4">
             <div className="footer-link">
-              <h3 className="footer-heading">Location</h3>
+              <h3 className="footer-heading">Местоположение</h3>
               <ul className="foolter-link-list">
                 <li className="foolter-link-item">
                   <a href="#">1234, New Winston Road, New York, NY10021</a>
@@ -98,7 +98,7 @@ export default function Footer() {
                 <li>
                   <a href="#">
                     <i className="fa fa-map-marker" />
-                    Maps &amp; Directions
+                    Карти и посоки
                   </a>
                 </li>
               </ul>
@@ -110,16 +110,16 @@ export default function Footer() {
             <div className="footer-middle-links">
               <ul>
                 <li>
-                  <a href="home">Home</a>
+                  <a href="home">Начало</a>
                 </li>
                 <li>
-                  <a href="terms-of-use">Terms &amp; Conditions</a>
+                  <a href="terms-of-use">Общи условия</a>
                 </li>
                 <li>
-                  <a href="privacy-policy">Privacy Policy</a>
+                  <a href="privacy-policy">Политика за поверителност</a>
                 </li>
                 <li>
-                  <a href="#">Website Feedback</a>
+                  <a href="#">Обратна връзка за сайта</a>
                 </li>
               </ul>
             </div>
@@ -128,7 +128,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-12 col-md-12 col-lg-12">
             <div className="footer-bottom">
-              <p>All rights reserved @AssetNest.com</p>
+              <p>Всички права запазени @AssetNest.com</p>
             </div>
           </div>
         </div>

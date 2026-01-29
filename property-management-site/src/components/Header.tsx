@@ -9,13 +9,13 @@ export default function Header() {
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"><span className="navbar-toggler-icon" /></button>
           <div className="collapse navbar-collapse home" id="main_nav">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item"><a className="nav-link" href="/plans">Plans</a></li>
-              <li className="nav-item"><a className="nav-link" href="/services">Services</a></li>
-              <li className="nav-item"><a className="nav-link" href="/properties">Properties</a></li>
-              <li className="nav-item"><a className="nav-link" href="/about-us">About</a></li>
-              <li className="nav-item"><a className="nav-link" href="/contact-us">Contact</a></li>
-              <li className="nav-item"><a className="nav-link" href="/privacy-policy">Privacy Policy</a></li>
-              <li className="nav-item"><a className="nav-link" href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+              <li className="nav-item"><a className="nav-link" href="/plans">Планове</a></li>
+              <li className="nav-item"><a className="nav-link" href="/services">Услуги</a></li>
+              <li className="nav-item"><a className="nav-link" href="/properties">Имоти</a></li>
+              <li className="nav-item"><a className="nav-link" href="/about-us">За нас</a></li>
+              <li className="nav-item"><a className="nav-link" href="/contact-us">Контакти</a></li>
+              <li className="nav-item"><a className="nav-link" href="/privacy-policy">Политика за поверителност</a></li>
+              <li className="nav-item"><a className="nav-link" href="/terms-and-conditions">Общи условия</a></li>
             </ul>
           </div>{" "}
         </div>{" "}
