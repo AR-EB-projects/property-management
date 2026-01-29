@@ -10,7 +10,7 @@ export default function Footer() {
               <h3 className="footer-heading">Започнете</h3>
               <ul className="foolter-link-list">
                 <li className="foolter-link-item">
-                  <a href="#">Посетете AssetNest</a>
+                  <a href="#">Посетете ДомоМениджър</a>
                 </li>
                 <li className="foolter-link-item">
                   <a href="#">Кандидатствайте сега</a>
@@ -19,7 +19,7 @@ export default function Footer() {
                   <a href="#">Вижте такси и помощ</a>
                 </li>
                 <li className="foolter-link-item">
-                  <a href="#">Работете в AssetNest</a>
+                  <a href="#">Работете в ДомоМениджър</a>
                 </li>
               </ul>
             </div>
@@ -29,7 +29,7 @@ export default function Footer() {
               <h3 className="footer-heading">Открийте</h3>
               <ul className="foolter-link-list">
                 <li className="foolter-link-item">
-                  <a href="#">Посетете AssetNest</a>
+                  <a href="#">Посетете ДомоМениджър</a>
                 </li>
                 <li className="foolter-link-item">
                   <a href="#">Кандидатствайте сега</a>
@@ -38,7 +38,7 @@ export default function Footer() {
                   <a href="#">Вижте такси и помощ</a>
                 </li>
                 <li className="foolter-link-item">
-                  <a href="#">Работете в AssetNest</a>
+                  <a href="#">Работете в ДомоМениджър</a>
                 </li>
               </ul>
             </div>
@@ -128,7 +128,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-12 col-md-12 col-lg-12">
             <div className="footer-bottom">
-              <p>Всички права запазени @AssetNest.com</p>
+              <p>Всички права запазени @ДомоМениджър.com</p>
             </div>
           </div>
         </div>

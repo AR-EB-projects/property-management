@@ -242,7 +242,7 @@ export default function Home() {
                             />
                           </div>
                           <div className="whyChoose-info-heading">
-                            <h3>Защо да изберете AssetNest</h3>
+                            <h3>Защо да изберете ДомоМениджър</h3>
                             <p>Lorem ipsum sit amit</p>
                           </div>
                         </div>
@@ -1170,7 +1170,7 @@ export default function Home() {
                       <div className="section-main-heading text-left">
                         <h4 className="text-left">Testimonial</h4>
                         <h2 className="text-left">
-                          What our customers are saying about AssetNest
+                          What our customers are saying about ДомоМениджър
                         </h2>
                         <p className="mt-3">
                           Hear from our satisfied buyers, tenants, owners and
@@ -1200,7 +1200,7 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from AssetNest team who
+                                  You get an exclusive RM from ДомоМениджър team who
                                   tracks your property closely
                                 </p>
                               </div>
@@ -1223,7 +1223,7 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from AssetNest team who
+                                  You get an exclusive RM from ДомоМениджър team who
                                   tracks your property closely
                                 </p>
                               </div>
@@ -1246,7 +1246,7 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from AssetNest team who
+                                  You get an exclusive RM from ДомоМениджър team who
                                   tracks your property closely
                                 </p>
                               </div>
@@ -1269,7 +1269,7 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from AssetNest team who
+                                  You get an exclusive RM from ДомоМениджър team who
                                   tracks your property closely
                                 </p>
                               </div>
@@ -1291,7 +1291,7 @@ export default function Home() {
               <div className="col-12 col-md-8 col-lg-6">
                 <div className="section-main-heading">
                   <h4>Advantages</h4>
-                  <h2>The AssetNest Advantage</h2>
+                  <h2>The ДомоМениджър Advantage</h2>
                 </div>
               </div>
             </div>
@@ -1371,7 +1371,7 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="propertyMdone-heading">
-                  <h3>AssetNest Exclusive</h3>
+                  <h3>ДомоМениджър Exclusive</h3>
                   <p>Sponsored projects and events</p>
                 </div>
               </div>
