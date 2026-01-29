@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import HeaderBlack from "@/components/HeaderBlack";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import OfferButton from "@/components/OfferButton";
 import { usePathname } from "next/navigation";
 
 export default function RootLayout({
@@ -35,6 +36,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <ScrollToTop />
+        <OfferButton />
 
         <Script src="/js/jquery-3.7.1.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" strategy="afterInteractive" />
