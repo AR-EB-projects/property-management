@@ -10,8 +10,8 @@ export default function Home() {
               <div className="col-12 col-md-10 col-lg-6 col-xl-6 h-100">
                 <div className="banner-section-wrapper">
                   <h1>
-                    <span>Worried</span> about <span>Managing</span> your property
-                    in somewhere?
+                    <span>Притеснявате ли се</span> от <span>управлението</span> на сградата си
+                    и нуждата от домоуправител?
                   </h1>
                 </div>
               </div>
@@ -31,8 +31,8 @@ export default function Home() {
                         <div className="carosel-item-inner-wrapper">
                           <div className="cii-left">
                             <div className="cii-left-info">
-                              <h3>3BHK,Colorado</h3>
-                              <p>For Rent in United States, Colorado.</p>
+                              <h3>Сграда "Витоша", София</h3>
+                              <p>Сграда с 12 апартамента, София</p>
                             </div>
                             <div className="cii-right-info">
                               <div className="cii-right-info-inner">
@@ -40,32 +40,32 @@ export default function Home() {
                                   <span className="material-icons">
                                     square_foot
                                   </span>{" "}
-                                  845 sq.ft
+                                  12 апартамента
                                 </p>
                                 <p>
                                   <span className="material-icons">bed</span>2
-                                  Bedroom
+                                  Етажи
                                 </p>
                               </div>
                               <div className="cii-right-info-inner">
                                 <p>
                                   <span className="material-icons">bathtub</span>2
-                                  Bathroom
+                                  Входове
                                 </p>
                                 <p>
                                   <span className="material-icons">apartment</span>
-                                  1/3 Floor
+                                  4 етажа
                                 </p>
                               </div>
                             </div>
                           </div>
                           <div className="cii-right">
                             <a className="more-detail-btn" href="#">
-                              More Details
+                              Повече детайли
                             </a>
                           </div>
                           <div className="cii-overlay-info">
-                            <p>Apartment, Rent</p>
+                            <p>Етажна собственост</p>
                           </div>
                         </div>
                       </div>
@@ -74,8 +74,8 @@ export default function Home() {
                         <div className="carosel-item-inner-wrapper">
                           <div className="cii-left">
                             <div className="cii-left-info">
-                              <h3>2BHK, Oregon</h3>
-                              <p>For Rent in United States, Oregon.</p>
+                              <h3>Сграда "Родопи", Пловдив</h3>
+                              <p>Сграда с 8 апартамента, Пловдив</p>
                             </div>
                             <div className="cii-right-info">
                               <div className="cii-right-info-inner">
@@ -83,32 +83,32 @@ export default function Home() {
                                   <span className="material-icons">
                                     square_foot
                                   </span>{" "}
-                                  845 sq.ft
+                                  8 апартамента
                                 </p>
                                 <p>
                                   <span className="material-icons">bed</span>2
-                                  Bedroom
+                                  Етажи
                                 </p>
                               </div>
                               <div className="cii-right-info-inner">
                                 <p>
                                   <span className="material-icons">bathtub</span>2
-                                  Bathroom
+                                  Входове
                                 </p>
                                 <p>
                                   <span className="material-icons">apartment</span>
-                                  1/3 Floor
+                                  4 етажа
                                 </p>
                               </div>
                             </div>
                           </div>
                           <div className="cii-right">
                             <a className="more-detail-btn" href="#">
-                              More Details
+                              Повече детайли
                             </a>
                           </div>
                           <div className="cii-overlay-info">
-                            <p>Apartment, Rent</p>
+                            <p>Етажна собственост</p>
                           </div>
                         </div>
                       </div>
@@ -125,7 +125,7 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12 col-xl-12">
                 <div className="section-second-heading">
-                  <h3>Get started with exploring our services</h3>
+                  <h3>Започнете с разглеждането на нашите услуги</h3>
                 </div>
               </div>
             </div>
@@ -139,10 +139,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/Property-Management.jpeg"
+                          src="/images/cashier.jpg"
                           alt="img"
                         />
-                        <h3>Property Management</h3>
+                                  <h3>Касови услуги</h3>
                       </a>
                     </div>
                     {/* item 2 */}
@@ -154,7 +154,7 @@ export default function Home() {
                           src="/images/tenant-management.webp"
                           alt="img"
                         />
-                        <h3>Tenant Management</h3>
+                                  <h3>Професионален управител</h3>
                       </a>
                     </div>
                     {/* item 3 */}
@@ -163,10 +163,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/plot-monitoring.jpg"
+                          src="/images/business-plan.webp"
                           alt="img"
                         />
-                        <h3>Plot Monitoring</h3>
+                                  <h3>Юридическа консултация</h3>
                       </a>
                     </div>
                     {/* item 4 */}
@@ -175,10 +175,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/packers-movers.jpg"
+                          src="/images/clean.jpg"
                           alt="img"
                         />
-                        <h3>Packers Movers</h3>
+                                  <h3>Почистване на входа</h3>
                       </a>
                     </div>
                     {/* item 5 */}
@@ -190,7 +190,7 @@ export default function Home() {
                           src="/images/apartment-maintanence.webp"
                           alt="img"
                         />
-                        <h3>Apartment Maintanence</h3>
+                                  <h3>Техническа поддръжка</h3>
                       </a>
                     </div>
                     {/* item 6 */}
@@ -199,10 +199,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/business-invest-plan.webp"
+                          src="/images/entrance.png"
                           alt="img"
                         />
-                        <h3>Business Invest Plan</h3>
+                                  <h3>Поддръжка на около входно пространство</h3>
                       </a>
                     </div>
                     {/* item 7 */}
@@ -211,10 +211,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/business-plan.webp"
+                          src="/images/plot-monitoring.jpg"
                           alt="img"
                         />
-                        <h3>Business Plan</h3>
+                                  <h3>Пълно управление на сградата</h3>
                       </a>
                     </div>
                   </div>
@@ -242,13 +242,12 @@ export default function Home() {
                             />
                           </div>
                           <div className="whyChoose-info-heading">
-                            <h3>Why to choose AssetNest</h3>
-                            <p>Lorem ipsum sit amit</p>
+                            <h3>Защо да изберете ДомоМениджър</h3>
                           </div>
                         </div>
                         <div className="whyChoose-viewall">
                           <a className="header-request-btn" href="why-choose">
-                            View all Insights
+                            Вижте всички прозрения
                           </a>
                         </div>
                       </div>
@@ -272,10 +271,9 @@ export default function Home() {
                                   />
                                 </div>
                                 <div className="whychoose-card-body">
-                                  <h3>Find Right Tenants</h3>
+                                  <h3>Професионален домоуправител</h3>
                                   <p>
-                                    Leave the problem to us and expect verified
-                                    tenants in no time.
+                                    Нашият опитен домоуправител ще се погрижи за всичко - от събиране на такси до организиране на ремонти.
                                   </p>
                                 </div>
                               </div>
@@ -292,10 +290,9 @@ export default function Home() {
                                   />
                                 </div>
                                 <div className="whychoose-card-body">
-                                  <h3>24/7 Support</h3>
+                                  <h3>24/7 аварийна поддръжка</h3>
                                   <p>
-                                    Leave the problem to us and expect verified
-                                    tenants in no time.
+                                    Ние сме на разположение 24/7 за спешни случаи и аварии, за да осигурим безопасност и комфорт.
                                   </p>
                                 </div>
                               </div>
@@ -312,10 +309,9 @@ export default function Home() {
                                   />
                                 </div>
                                 <div className="whychoose-card-body">
-                                  <h3>Rise of Property Value</h3>
+                                  <h3>Поддържане на стойността</h3>
                                   <p>
-                                    Leave the problem to us and expect verified
-                                    tenants in no time.
+                                    Редовната поддръжка и грижа поддържат стойността на имота ви и го правят по-привлекателен.
                                   </p>
                                 </div>
                               </div>
@@ -332,10 +328,9 @@ export default function Home() {
                                   />
                                 </div>
                                 <div className="whychoose-card-body">
-                                  <h3>Free Property Selection</h3>
+                                  <h3>Безплатна консултация с нас</h3>
                                   <p>
-                                    Leave the problem to us and expect verified
-                                    tenants in no time.
+                                    Свържете се с нас за безплатна среща и консултация относно управлението на вашата сграда.
                                   </p>
                                 </div>
                               </div>
@@ -352,30 +347,9 @@ export default function Home() {
                                   />
                                 </div>
                                 <div className="whychoose-card-body">
-                                  <h3>Legal Documentation</h3>
+                                  <h3>Своевременни плащания</h3>
                                   <p>
-                                    Leave the problem to us and expect verified
-                                    tenants in no time.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            {/* item 6 */}
-                            <div className="carosel-item">
-                              <div className="whychoose-card-wrapper">
-                                <div className="whychoose-card-icon">
-                                  <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/renter.png"
-                                    alt="img"
-                                  />
-                                </div>
-                                <div className="whychoose-card-body">
-                                  <h3>Payments on Time</h3>
-                                  <p>
-                                    Leave the problem to us and expect verified
-                                    tenants in no time.
+                                    Осигуряваме навременно събиране на такси и плащания към доставчици без забавяния.
                                   </p>
                                 </div>
                               </div>
@@ -1170,7 +1144,7 @@ export default function Home() {
                       <div className="section-main-heading text-left">
                         <h4 className="text-left">Testimonial</h4>
                         <h2 className="text-left">
-                          What our customers are saying about AssetNest
+                          What our customers are saying about ДомоМениджър
                         </h2>
                         <p className="mt-3">
                           Hear from our satisfied buyers, tenants, owners and
@@ -1200,7 +1174,7 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from AssetNest team who
+                                  You get an exclusive RM from ДомоМениджър team who
                                   tracks your property closely
                                 </p>
                               </div>
@@ -1223,7 +1197,7 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from AssetNest team who
+                                  You get an exclusive RM from ДомоМениджър team who
                                   tracks your property closely
                                 </p>
                               </div>
@@ -1246,7 +1220,7 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from AssetNest team who
+                                  You get an exclusive RM from ДомоМениджър team who
                                   tracks your property closely
                                 </p>
                               </div>
@@ -1269,7 +1243,7 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from AssetNest team who
+                                  You get an exclusive RM from ДомоМениджър team who
                                   tracks your property closely
                                 </p>
                               </div>
@@ -1291,7 +1265,7 @@ export default function Home() {
               <div className="col-12 col-md-8 col-lg-6">
                 <div className="section-main-heading">
                   <h4>Advantages</h4>
-                  <h2>The AssetNest Advantage</h2>
+                  <h2>The ДомоМениджър Advantage</h2>
                 </div>
               </div>
             </div>
@@ -1371,7 +1345,7 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="propertyMdone-heading">
-                  <h3>AssetNest Exclusive</h3>
+                  <h3>ДомоМениджър Exclusive</h3>
                   <p>Sponsored projects and events</p>
                 </div>
               </div>

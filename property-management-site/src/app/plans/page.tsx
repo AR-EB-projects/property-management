@@ -936,7 +936,7 @@ export default function Plans() {
                                         <div className="section-main-heading text-left">
                                             <h4 className="text-left">Testimonial</h4>
                                             <h2 className="text-left">
-                                                What our customers are saying about AssetNest
+                                                What our customers are saying about ДомоМениджър
                                             </h2>
                                             <p className="mt-3">
                                                 Hear from our satisfied buyers, tenants, owners and dealers
@@ -965,7 +965,7 @@ export default function Plans() {
                                                         </div>
                                                         <div className="testimonial-card-body">
                                                             <p>
-                                                                You get an exclusive RM from AssetNest team who
+                                                                You get an exclusive RM from ДомоМениджър team who
                                                                 tracks your property closely
                                                             </p>
                                                         </div>
@@ -988,7 +988,7 @@ export default function Plans() {
                                                         </div>
                                                         <div className="testimonial-card-body">
                                                             <p>
-                                                                You get an exclusive RM from AssetNest team who
+                                                                You get an exclusive RM from ДомоМениджър team who
                                                                 tracks your property closely
                                                             </p>
                                                         </div>
@@ -1011,7 +1011,7 @@ export default function Plans() {
                                                         </div>
                                                         <div className="testimonial-card-body">
                                                             <p>
-                                                                You get an exclusive RM from AssetNest team who
+                                                                You get an exclusive RM from ДомоМениджър team who
                                                                 tracks your property closely
                                                             </p>
                                                         </div>
@@ -1034,7 +1034,7 @@ export default function Plans() {
                                                         </div>
                                                         <div className="testimonial-card-body">
                                                             <p>
-                                                                You get an exclusive RM from AssetNest team who
+                                                                You get an exclusive RM from ДомоМениджър team who
                                                                 tracks your property closely
                                                             </p>
                                                         </div>
