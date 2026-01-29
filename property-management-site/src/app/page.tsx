@@ -10,8 +10,7 @@ export default function Home() {
               <div className="col-12 col-md-10 col-lg-6 col-xl-6 h-100">
                 <div className="banner-section-wrapper">
                   <h1>
-                    <span>Притеснявате ли се</span> от <span>управлението</span> на сградата си
-                    и нуждата от домоуправител?
+                    Професионална грижа за вашия вход – <span>Пловдив</span>
                   </h1>
                 </div>
               </div>
@@ -244,11 +243,6 @@ export default function Home() {
                           <div className="whyChoose-info-heading">
                             <h3>Защо да изберете ДомоМениджър</h3>
                           </div>
-                        </div>
-                        <div className="whyChoose-viewall">
-                          <a className="header-request-btn" href="why-choose">
-                            Вижте всички прозрения
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -637,8 +631,8 @@ export default function Home() {
             <div className="row align-items-center justify-content-center">
               <div className="col-12 col-md-8 col-lg-6">
                 <div className="section-main-heading">
-                  <h4>All Property Needs - One Portal</h4>
-                  <h2>How It Works</h2>
+                  <h4>Всички нужди за вашия вход – Една платформа</h4>
+                  <h2>Как работи</h2>
                 </div>
               </div>
             </div>
@@ -655,11 +649,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Property Information</h3>
+                    <h3>Касиер</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Осигурява точна и бърза обработка на плащанията на наематели и собственици, следи за финансовата документация и отчети.
                     </p>
                   </div>
                 </div>
@@ -676,11 +668,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Anaysis History</h3>
+                    <h3>Управител</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Координира всички дейности в сградата, следи за спазването на правилата и осигурява комфорт и безопасност за живущите.
                     </p>
                   </div>
                 </div>
@@ -697,11 +687,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Pricing Information</h3>
+                    <h3>Юрист</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Предоставя правна помощ при договори, спорове и други въпроси, свързани с имота и неговото управление.
                     </p>
                   </div>
                 </div>
@@ -718,11 +706,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Deal Details</h3>
+                    <h3>Почистване на входа</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Поддържа общите части чисти и приветливи, осигурявайки редовна поддръжка на входните пространства.
                     </p>
                   </div>
                 </div>
@@ -739,11 +725,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Lead Information</h3>
+                    <h3>Техник</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Извършва ремонти и техническа поддръжка на сградата, решава аварийни ситуации и поддържа системите в изправност.
                     </p>
                   </div>
                 </div>
@@ -760,11 +744,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Basic Information</h3>
+                    <h3>Поддръжка на около входното пространство</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Грижи се за озеленяване, осветление и безопасността на околните площи, създавайки приятна среда за живущите.
                     </p>
                   </div>
                 </div>
@@ -773,7 +755,7 @@ export default function Home() {
           </div>
         </div>
         {/* projects */}
-        <div className="section projects">
+        {/* <div className="section projects">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
@@ -787,7 +769,6 @@ export default function Home() {
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="carosel-root">
                   <div className="carosel project">
-                    {/* item 1 */}
                     <div className="carosel-item">
                       <div className="project-card">
                         <div className="project-card-image">
@@ -845,7 +826,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    {/* item 2 */}
                     <div className="carosel-item">
                       <div className="project-card">
                         <div className="project-card-image">
@@ -901,7 +881,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    {/* item 3 */}
                     <div className="carosel-item">
                       <div className="project-card">
                         <div className="project-card-image">
@@ -957,7 +936,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    {/* item 4 */}
                     <div className="carosel-item">
                       <div className="project-card">
                         <div className="project-card-image">
@@ -1015,7 +993,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    {/* item 5 */}
                     <div className="carosel-item">
                       <div className="project-card">
                         <div className="project-card-image">
@@ -1071,7 +1048,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    {/* item 6 */}
                     <div className="carosel-item">
                       <div className="project-card">
                         <div className="project-card-image">
@@ -1132,7 +1108,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* testimonial */}
         <div className="section testimonial">
           <div className="container">
@@ -1340,7 +1316,7 @@ export default function Home() {
           </div>
         </div>
         {/* exclusive */}
-        <div className="section projects">
+        {/* <div className="section projects">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
@@ -1354,7 +1330,6 @@ export default function Home() {
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="carosel-root">
                   <div className="carosel exclusive">
-                    {/* item 1 */}
                     <div className="carosel-item">
                       <div className="exclusive-card">
                         <a href="#">
@@ -1367,7 +1342,6 @@ export default function Home() {
                         </a>
                       </div>
                     </div>
-                    {/* item 2 */}
                     <div className="carosel-item">
                       <div className="exclusive-card">
                         <a href="#">
@@ -1380,7 +1354,6 @@ export default function Home() {
                         </a>
                       </div>
                     </div>
-                    {/* item 3 */}
                     <div className="carosel-item">
                       <div className="exclusive-card">
                         <a href="#">
@@ -1393,7 +1366,6 @@ export default function Home() {
                         </a>
                       </div>
                     </div>
-                    {/* item 4 */}
                     <div className="carosel-item">
                       <div className="exclusive-card">
                         <a href="#">
@@ -1406,7 +1378,6 @@ export default function Home() {
                         </a>
                       </div>
                     </div>
-                    {/* item 5 */}
                     <div className="carosel-item">
                       <div className="exclusive-card">
                         <a href="#">
@@ -1419,7 +1390,6 @@ export default function Home() {
                         </a>
                       </div>
                     </div>
-                    {/* item 6 */}
                     <div className="carosel-item">
                       <div className="exclusive-card">
                         <a href="#">
@@ -1437,7 +1407,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

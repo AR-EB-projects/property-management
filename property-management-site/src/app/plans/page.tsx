@@ -8,7 +8,7 @@ export default function Plans() {
                     <div className="row">
                         <div className="col-12 col-md-12 col-lg-12">
                             <div className="pageBanner-inner">
-                                <h2>Plans</h2>
+                                <h2>Планове</h2>
                             </div>
                         </div>
                     </div>
@@ -27,32 +27,9 @@ export default function Plans() {
                                     </div>
                                     <div className="plans-head-item">
                                         <div className="plans-head-item-inner phii-1">
-                                            <h3>Basic Plan</h3>
-                                            <p>Our most popular plan.</p>
-                                            <h2>$10</h2>
-                                            <a className="theme-btn btn-secondary" href="#">
-                                                Get Started
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="plans-head-item">
-                                        <div className="plans-head-item-inner phii-2">
-                                            <h3>Business Plan</h3>
-                                            <p>Best for growing teams.</p>
-                                            <h2>$20</h2>
-                                            <a className="theme-btn btn-secondary" href="#">
-                                                Get Started
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="plans-head-item">
-                                        <div className="plans-head-item-inner phii-3">
-                                            <h3>Enterprise Plan</h3>
-                                            <p>Our most popular plan.</p>
-                                            <h2>$40</h2>
-                                            <a className="theme-btn btn-secondary" href="#">
-                                                Get Started
-                                            </a>
+                                            <h3>Стандартен пакет</h3>
+                                            <p>Всички необходими услуги за вашия имот</p>
+                                            <h2>6 €</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -62,28 +39,8 @@ export default function Plans() {
                                     <div className="plans-body-row">
                                         <div className="plans-body-item">
                                             <h3 className="plans-body-item-heading">
-                                                Regular Property inspections
+                                                Касиер
                                             </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
                                         </div>
                                         <div className="plans-body-item">
                                             <div className="plans-body-item-include">
@@ -100,28 +57,8 @@ export default function Plans() {
                                     <div className="plans-body-row">
                                         <div className="plans-body-item">
                                             <h3 className="plans-body-item-heading">
-                                                Customized Periodic property updates
+                                                Управител
                                             </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
                                         </div>
                                         <div className="plans-body-item">
                                             <div className="plans-body-item-include">
@@ -138,28 +75,8 @@ export default function Plans() {
                                     <div className="plans-body-row">
                                         <div className="plans-body-item">
                                             <h3 className="plans-body-item-heading">
-                                                Prior alerts- prior alert about encroach attempts
+                                                Юрист
                                             </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
                                         </div>
                                         <div className="plans-body-item">
                                             <div className="plans-body-item-include">
@@ -176,28 +93,8 @@ export default function Plans() {
                                     <div className="plans-body-row">
                                         <div className="plans-body-item">
                                             <h3 className="plans-body-item-heading">
-                                                Personalized services - Show property to the plots.
+                                                Почистване на входа
                                             </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
                                         </div>
                                         <div className="plans-body-item">
                                             <div className="plans-body-item-include">
@@ -214,28 +111,8 @@ export default function Plans() {
                                     <div className="plans-body-row">
                                         <div className="plans-body-item">
                                             <h3 className="plans-body-item-heading">
-                                                Evaluate property value
+                                                Техник
                                             </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
                                         </div>
                                         <div className="plans-body-item">
                                             <div className="plans-body-item-include">
@@ -252,584 +129,8 @@ export default function Plans() {
                                     <div className="plans-body-row">
                                         <div className="plans-body-item">
                                             <h3 className="plans-body-item-heading">
-                                                Determine accurate rental value
+                                                Поддръжка на около входното пространство
                                             </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">
-                                                Rental/Lease agreement
-                                            </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">Rent collection</h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">
-                                                Marketing/Advertising
-                                            </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">
-                                                Tenant screening &amp; Management
-                                            </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">
-                                                Legal documentation
-                                            </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">Reporting</h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">Digital Reporting</h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">24/7 Support</h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">
-                                                Plot Cleaning &amp; Maintenance
-                                            </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">Free EC – yearly</h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">
-                                                Resolve Any Dispute
-                                            </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">Inventory Check</h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">
-                                                Exit Inventory Check
-                                            </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">Bill payments</h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* row */}
-                                    <div className="plans-body-row">
-                                        <div className="plans-body-item">
-                                            <h3 className="plans-body-item-heading">
-                                                Plumbing, Electrical &amp; Cleaning
-                                            </h3>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/notcheck.png"
-                                                    alt="img"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="plans-body-item">
-                                            <div className="plans-body-item-include">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/check.png"
-                                                    alt="img"
-                                                />
-                                            </div>
                                         </div>
                                         <div className="plans-body-item">
                                             <div className="plans-body-item-include">
@@ -858,64 +159,19 @@ export default function Plans() {
                                 <div className="plans-head">
                                     <div className="plans-head-item">
                                         <div className="plans-head-item-inner phii-1">
-                                            <h3>Basic Plan</h3>
-                                            <p>Our most popular plan.</p>
-                                            <h2>$10</h2>
+                                            <h3>Пълен Пакет Услуги</h3>
+                                            <p>Всички необходими услуги за вашия имот</p>
+                                            <h2>6 €</h2>
                                             <ul className="plans-head-item-inner-list">
-                                                <li>Regular Property inspections</li>
-                                                <li>Customized Periodic property updates</li>
-                                                <li>Prior alerts - about encroach attempts</li>
-                                                <li>Personalized services </li>
-                                                <li>Evaluate property value</li>
-                                                <li>Determine accurate rental value</li>
-                                                <li>Rental/Lease agreement</li>
-                                                <li>Rent collection</li>
-                                                <li>Marketing/Advertising</li>
+                                                <li>Касиер</li>
+                                                <li>Управител</li>
+                                                <li>Юрист</li>
+                                                <li>Почистване на входа</li>
+                                                <li>Техник</li>
+                                                <li>Поддръжка на около входното пространство</li>
                                             </ul>
                                             <a className="theme-btn btn-secondary" href="#">
-                                                Get Started
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="plans-head-item">
-                                        <div className="plans-head-item-inner phii-2">
-                                            <h3>Business Plan</h3>
-                                            <p>Best for growing teams.</p>
-                                            <h2>$20</h2>
-                                            <ul className="plans-head-item-inner-list">
-                                                <li>Regular Property inspections</li>
-                                                <li>Customized Periodic property updates</li>
-                                                <li>Prior alerts - about encroach attempts</li>
-                                                <li>Personalized services </li>
-                                                <li>Evaluate property value</li>
-                                                <li>Determine accurate rental value</li>
-                                                <li>Rental/Lease agreement</li>
-                                                <li>Rent collection</li>
-                                                <li>Marketing/Advertising</li>
-                                            </ul>
-                                            <a className="theme-btn btn-secondary" href="#">
-                                                Get Started
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="plans-head-item">
-                                        <div className="plans-head-item-inner phii-3">
-                                            <h3>Enterprise Plan</h3>
-                                            <p>Our most popular plan.</p>
-                                            <h2>$40</h2>
-                                            <ul className="plans-head-item-inner-list">
-                                                <li>Regular Property inspections</li>
-                                                <li>Customized Periodic property updates</li>
-                                                <li>Prior alerts - about encroach attempts</li>
-                                                <li>Personalized services </li>
-                                                <li>Evaluate property value</li>
-                                                <li>Determine accurate rental value</li>
-                                                <li>Rental/Lease agreement</li>
-                                                <li>Rent collection</li>
-                                                <li>Marketing/Advertising</li>
-                                            </ul>
-                                            <a className="theme-btn btn-secondary" href="#">
-                                                Get Started
+                                                Започнете сега
                                             </a>
                                         </div>
                                     </div>
@@ -934,12 +190,12 @@ export default function Plans() {
                                 <div className="row">
                                     <div className="col-12 col-md-12 col-lg-6">
                                         <div className="section-main-heading text-left">
-                                            <h4 className="text-left">Testimonial</h4>
+                                            <h4 className="text-left">Отзиви</h4>
                                             <h2 className="text-left">
-                                                What our customers are saying about ДомоМениджър
+                                                Какво казват нашите клиенти за ДомоМениджър
                                             </h2>
                                             <p className="mt-3">
-                                                Hear from our satisfied buyers, tenants, owners and dealers
+                                                Чуйте от нашите доволни купувачи, наематели, собственици и дилъри
                                             </p>
                                         </div>
                                     </div>
@@ -959,14 +215,14 @@ export default function Plans() {
                                                                 alt="img"
                                                             />
                                                             <div className="testimonial-author-info">
-                                                                <h3>John Doe</h3>
-                                                                <h4>Owner, New York</h4>
+                                                                <h3>Иван Петров</h3>
+                                                                <h4>Собственик, София</h4>
                                                             </div>
                                                         </div>
                                                         <div className="testimonial-card-body">
                                                             <p>
-                                                                You get an exclusive RM from ДомоМениджър team who
-                                                                tracks your property closely
+                                                                Получавате ексклузивен мениджър от екипа на ДомоМениджър, който
+                                                                следи имота ви отблизо
                                                             </p>
                                                         </div>
                                                     </div>
@@ -982,14 +238,14 @@ export default function Plans() {
                                                                 alt="img"
                                                             />
                                                             <div className="testimonial-author-info">
-                                                                <h3>Srikanth Malleboina</h3>
-                                                                <h4>Owner, America</h4>
+                                                                <h3>Мария Георгиева</h3>
+                                                                <h4>Собственик, Пловдив</h4>
                                                             </div>
                                                         </div>
                                                         <div className="testimonial-card-body">
                                                             <p>
-                                                                You get an exclusive RM from ДомоМениджър team who
-                                                                tracks your property closely
+                                                                Получавате ексклузивен мениджър от екипа на ДомоМениджър, който
+                                                                следи имота ви отблизо
                                                             </p>
                                                         </div>
                                                     </div>
@@ -1005,14 +261,14 @@ export default function Plans() {
                                                                 alt="img"
                                                             />
                                                             <div className="testimonial-author-info">
-                                                                <h3>Mary Cort</h3>
-                                                                <h4>Owner, Mexico</h4>
+                                                                <h3>Георги Иванов</h3>
+                                                                <h4>Собственик, Варна</h4>
                                                             </div>
                                                         </div>
                                                         <div className="testimonial-card-body">
                                                             <p>
-                                                                You get an exclusive RM from ДомоМениджър team who
-                                                                tracks your property closely
+                                                                Получавате ексклузивен мениджър от екипа на ДомоМениджър, който
+                                                                следи имота ви отблизо
                                                             </p>
                                                         </div>
                                                     </div>
@@ -1028,14 +284,14 @@ export default function Plans() {
                                                                 alt="img"
                                                             />
                                                             <div className="testimonial-author-info">
-                                                                <h3>Max Minth</h3>
-                                                                <h4>Owner, New Jersy</h4>
+                                                                <h3>Анна Димитрова</h3>
+                                                                <h4>Собственик, Бургас</h4>
                                                             </div>
                                                         </div>
                                                         <div className="testimonial-card-body">
                                                             <p>
-                                                                You get an exclusive RM from ДомоМениджър team who
-                                                                tracks your property closely
+                                                                Получавате ексклузивен мениджър от екипа на ДомоМениджър, който
+                                                                следи имота ви отблизо
                                                             </p>
                                                         </div>
                                                     </div>

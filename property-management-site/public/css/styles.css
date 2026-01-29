@@ -1893,6 +1893,7 @@ footer {
     display: inline-block;
     border-radius: 10px;
     padding: 20px;
+    text-align: center;
 }
 
 .plans-head-item-inner.phii-1 {
@@ -1953,6 +1954,7 @@ footer {
 .plans-body-item {
     flex: 50%;
     margin: 0 15px;
+    text-align: center;
 }
 
 .plans-body-item:first-child {
