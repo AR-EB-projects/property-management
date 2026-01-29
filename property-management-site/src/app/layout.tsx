@@ -1,11 +1,17 @@
+"use client";
+
 import Script from "next/script";
 import Header from "@/components/Header";
+import HeaderBlack from "@/components/HeaderBlack";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const pathname = usePathname();
+  
   return (
     <html lang="en">
       <head>
@@ -25,7 +31,7 @@ export default function RootLayout({
       </head>
 
       <body>
-        <Header />
+        {pathname === "/about-us" || pathname === "/contact-us" ? <HeaderBlack /> : <Header />}
         {children}
         <Footer />
         <ScrollToTop />

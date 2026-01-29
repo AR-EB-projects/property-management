@@ -2,223 +2,199 @@
 
 export default function AboutUs() {
     return (
-        <>
-            <header>
-                <nav id="navbar_top" className="navbar navbar-expand-lg navbar-dark">
-                    <div className="container">
-                        <a className="navbar-brand" href="/"><img loading="lazy" className="img-fluid" src="/images/logo.png" alt="img" /></a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"><span className="navbar-toggler-icon" /></button>
-                        <div className="collapse navbar-collapse" id="main_nav">
-                            <ul className="navbar-nav ms-auto">
-                                <li className="nav-item"><a className="nav-link" href="/plans">Plans</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/services">Services</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/properties">Properties</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/about-us">About</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/contact-us">Contact</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/privacy-policy">Privacy Policy</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-                            </ul>
-                        </div>{" "}
-                    </div>{" "}
-                </nav>
-            </header>
-            <div className="main-content-wrapper">
-                <div className="section pageHeading">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 col-md-12 col-lg-12">
-                                <div className="section-main-heading text-left">
-                                    <h4 className="text-left">About Us</h4>
-                                    <h2 className="text-left">We understand property management</h2>
-                                    <p className="mt-2">Because we are property managers</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-12 col-md-12 col-lg-12">
-                                <div className="page-banner-wrapper">
-                                    <img
-                                        loading="lazy"
-                                        className="img-fluid"
-                                        src="/images/modern-apartment-architecture.jpg"
-                                        alt="img"
-                                    />
-                                    <div className="page-banner-content">
-                                        <h3>About Us</h3>
-                                        <p>
-                                            Property is an end to end Property Management Company in World.
-                                            The company offers rental management and property management
-                                            services and online rent agreement services. We are also
-                                            planning to expand our services in cities like America, New
-                                            York, etc.
-                                        </p>
-                                        <p>
-                                            The company was founded in 2026 in New York, an IBA graduate. He
-                                            came up with the idea to solve the problems of the unorganized
-                                            real estate market. This is how Housewise came into existence
-                                            with the main aim of providing a Home to the people at their
-                                            convenience.
-                                        </p>
-                                    </div>
-                                </div>
+        <div className="main-content-wrapper">
+            <div className="section pageHeading">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-md-12 col-lg-12">
+                            <div className="section-main-heading text-left">
+                                <h2 className="text-left">Ние разбираме управлението на имоти</h2>
+                                <p className="mt-2">Защото ние сме домоуправители</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* welcome */}
-                <div className="section welcome">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 col-md-6 col-lg-6 mb-4">
-                                <div className="welcome-image">
-                                    <img
-                                        loading="lazy"
-                                        className="img-fluid"
-                                        src="/images/welcome.png"
-                                        alt="img"
-                                    />
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-6 col-lg-6 mb-4">
-                                <div className="welcome-content">
-                                    <h3>Welcome to Property Management</h3>
+                    <div className="row">
+                        <div className="col-12 col-md-12 col-lg-12">
+                            <div className="page-banner-wrapper">
+                                <img
+                                    loading="lazy"
+                                    className="img-fluid"
+                                    src="/images/modern-apartment-architecture.jpg"
+                                    alt="img"
+                                />
+                                <div className="page-banner-content">
+                                    <h3>За нас</h3>
                                     <p>
-                                        Housewise is a Property Management Company in World, for
-                                        Americans. It is founded on the principles of ethics,
-                                        transparency, and quality. The company provides NRI property
-                                        management services across the globe. We have loyal customers from
-                                        over 28 countries around the world. It includes the US, Canada,
-                                        Australia, New Zealand, the UK, and many more.
+                                        Property е компания за пълно управление на имоти в света.
+                                        Компанията предлага услуги по управление под наем и управление на имоти
+                                        и онлайн услуги за наемни договори. Планираме също
+                                        да разширим услугите си в градове като Америка, Ню
+                                        Йорк и др.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* we belive */}
-                <div className="section weBelieve">
-                    <div className="container">
-                        <div className="row align-items-center justify-content-center">
-                            <div className="col-12 col-md-8 col-lg-8">
-                                <div className="section-main-heading">
-                                    {/* <h4>About Us</h4> */}
-                                    <h2>What we believe</h2>
-                                    <p className="mt-2 text-center">
-                                        At Property Management, we know that a solution is only as strong
-                                        as the culture that nurtures it. Here are the values we believe
-                                        in:
+                                    <p>
+                                        Компанията е основана през 2026 г. в Ню Йорк от завършил IBA. Той
+                                        се досетил за идеята да реши проблемите на неорганизирания
+                                        пазар на имоти. Така се ражда Housewise с основната цел да предостави
+                                        Дом на хората на тяхното удобство.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-12 col-md-12 col-lg-12">
-                                <div className="webelive-list">
-                                    <ul>
-                                        <li>Focus on customers first</li>
-                                        <li>Be helpful and supportive</li>
-                                        <li>Communicate openly and honestly</li>
-                                        <li>Be nimble and flexible</li>
-                                        <li>Take initiative and work hard</li>
-                                        <li>Be passionate and have fun</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* cards */}
-                <div className="section linkCards">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 col-md-6 col-lg-6 mb-4">
-                                <div className="linkCards-wrapper team">
-                                    <h3>Our Team</h3>
-                                    <a href="#" className="theme-btn linkCards-btn">
-                                        Meet Our Team
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-6 col-lg-6 mb-4">
-                                <div className="linkCards-wrapper team">
-                                    <h3>Jobs at Property</h3>
-                                    <a href="#" className="theme-btn linkCards-btn">
-                                        Come Work With Us!
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* points */}
-                <div className="section points pt-4">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 col-md-12 col-lg-12">
-                                <div className="about-point-wrapper">
-                                    <ul>
-                                        <li className="about-point-item">
-                                            <div className="about-point-item-inner">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/trust.png"
-                                                    alt="img"
-                                                />
-                                                <h2>Trust &amp; Integrity</h2>
-                                            </div>
-                                        </li>
-                                        <li className="about-point-item">
-                                            <div className="about-point-item-inner">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/project-management.png"
-                                                    alt="img"
-                                                />
-                                                <h2>Technology</h2>
-                                            </div>
-                                        </li>
-                                        <li className="about-point-item">
-                                            <div className="about-point-item-inner">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/excellence.png"
-                                                    alt="img"
-                                                />
-                                                <h2>Excellence</h2>
-                                            </div>
-                                        </li>
-                                        <li className="about-point-item">
-                                            <div className="about-point-item-inner">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/seller.png"
-                                                    alt="img"
-                                                />
-                                                <h2>Ownership</h2>
-                                            </div>
-                                        </li>
-                                        <li className="about-point-item">
-                                            <div className="about-point-item-inner">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid"
-                                                    src="/images/innovation.png"
-                                                    alt="img"
-                                                />
-                                                <h2>Innovation</h2>
-                                            </div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+            {/* welcome */}
+            <div className="section welcome">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-md-6 col-lg-6 mb-4">
+                            <div className="welcome-image">
+                                <img
+                                    loading="lazy"
+                                    className="img-fluid"
+                                    src="/images/welcome.png"
+                                    alt="img"
+                                />
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-6 mb-4">
+                            <div className="welcome-content">
+                                <h3>Добре дошли в управление на имоти</h3>
+                                <p>
+                                    Housewise е компания за управление на имоти в света, за
+                                    американци. Основана е на принципите на етика,
+                                    прозрачност и качество. Компанията предоставя услуги по управление на имоти за NRI
+                                    в целия свят. Имаме лоялни клиенти от
+                                    над 28 държави по света. Включва САЩ, Канада,
+                                    Австралия, Нова Зеландия, Великобритания и много други.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* we belive */}
+            <div className="section weBelieve">
+                <div className="container">
+                    <div className="row align-items-center justify-content-center">
+                        <div className="col-12 col-md-8 col-lg-8">
+                            <div className="section-main-heading">
+                                {/* <h4>About Us</h4> */}
+                                <h2>В какво вярваме</h2>
+                                <p className="mt-2 text-center">
+                                    В управление на имоти знаем, че едно решение е толкова силно,
+                                    колкото културата, която го подхранва. Ето ценностите, в които вярваме:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12 col-md-12 col-lg-12">
+                            <div className="webelive-list">
+                                <ul>
+                                    <li>Първо фокусираме върху клиентите</li>
+                                    <li>Бъдете полезни и подкрепящи</li>
+                                    <li>Комуникирайте открито и честно</li>
+                                    <li>Бъдете гъвкави и адаптивни</li>
+                                    <li>Поемайте инициатива и работете усърдно</li>
+                                    <li>Бъдете страстни и се забавлявайте</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* cards */}
+            <div className="section linkCards">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-md-6 col-lg-6 mb-4">
+                            <div className="linkCards-wrapper team">
+                                <h3>Нашият екип</h3>
+                                <a href="#" className="theme-btn linkCards-btn">
+                                    Запознайте се с нашия екип
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-6 mb-4">
+                            <div className="linkCards-wrapper team">
+                                <h3>Работа в Property</h3>
+                                <a href="#" className="theme-btn linkCards-btn">
+                                    Работете с нас!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* points */}
+            <div className="section points pt-4">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-md-12 col-lg-12">
+                            <div className="about-point-wrapper">
+                                <ul>
+                                    <li className="about-point-item">
+                                        <div className="about-point-item-inner">
+                                            <img
+                                                loading="lazy"
+                                                className="img-fluid"
+                                                src="/images/trust.png"
+                                                alt="img"
+                                            />
+                                            <h2>Доверие и почтеност</h2>
+                                        </div>
+                                    </li>
+                                    <li className="about-point-item">
+                                        <div className="about-point-item-inner">
+                                            <img
+                                                loading="lazy"
+                                                className="img-fluid"
+                                                src="/images/project-management.png"
+                                                alt="img"
+                                            />
+                                            <h2>Технологии</h2>
+                                        </div>
+                                    </li>
+                                    <li className="about-point-item">
+                                        <div className="about-point-item-inner">
+                                            <img
+                                                loading="lazy"
+                                                className="img-fluid"
+                                                src="/images/excellence.png"
+                                                alt="img"
+                                            />
+                                            <h2>Отличие</h2>
+                                        </div>
+                                    </li>
+                                    <li className="about-point-item">
+                                        <div className="about-point-item-inner">
+                                            <img
+                                                loading="lazy"
+                                                className="img-fluid"
+                                                src="/images/seller.png"
+                                                alt="img"
+                                            />
+                                            <h2>Отговорност</h2>
+                                        </div>
+                                    </li>
+                                    <li className="about-point-item">
+                                        <div className="about-point-item-inner">
+                                            <img
+                                                loading="lazy"
+                                                className="img-fluid"
+                                                src="/images/innovation.png"
+                                                alt="img"
+                                            />
+                                            <h2>Иновации</h2>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
