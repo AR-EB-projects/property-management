@@ -68,7 +68,7 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
             const normalized = formData.amount.replace(",", ".").trim();
             const amountNum = Number(normalized);
             if (!Number.isFinite(amountNum) || amountNum <= 0) {
-                throw new Error("Invalid amount");
+                throw new Error("Невалидна сума");
             }
             const amountCents = Math.round(amountNum * 100);
 
@@ -82,7 +82,7 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
                 note: formData.note || null,
             });
         } catch (err: any) {
-            setError(err.message || "Failed to save payment");
+            setError(err.message || "Неуспешно запазване на плащане");
         } finally {
             setLoading(false);
         }
@@ -91,14 +91,14 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
     return (
         <form onSubmit={handleSubmit} style={{ maxWidth: 600 }}>
             <div style={{ marginBottom: 16 }}>
-                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Block *</label>
+                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Блок *</label>
                 <select
                     value={formData.blockId}
                     onChange={(e) => setFormData({ ...formData, blockId: e.target.value })}
                     required
                     style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 >
-                    <option value="">Select block</option>
+                    <option value="">Изберете блок</option>
                     {blocks.map((b) => (
                         <option key={b.id} value={b.id}>
                             {b.name || b.address}
@@ -108,7 +108,7 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
             </div>
 
             <div style={{ marginBottom: 16 }}>
-                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Apartment *</label>
+                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Апартамент *</label>
                 <select
                     value={formData.apartmentId}
                     onChange={(e) => setFormData({ ...formData, apartmentId: e.target.value })}
@@ -116,22 +116,22 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
                     disabled={!formData.blockId}
                     style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 >
-                    <option value="">Select apartment</option>
+                    <option value="">Изберете апартамент</option>
                     {apartments.map((a) => (
                         <option key={a.id} value={a.id}>
-                            {a.entrance ? `Entrance ${a.entrance} - ` : ""}Apt {a.number}
+                            {a.entrance ? `Вход ${a.entrance} - ` : ""}Ап. {a.number}
                         </option>
                     ))}
                 </select>
             </div>
 
             <div style={{ marginBottom: 16 }}>
-                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Amount (BGN) *</label>
+                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Сума (лв.) *</label>
                 <input
                     type="text"
                     value={formData.amount}
                     onChange={(e) => setFormData({ ...formData, amount: e.target.value })}
-                    placeholder="e.g. 50 or 50.50"
+                    placeholder="напр. 50 или 50.50"
                     required
                     style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 />
@@ -139,7 +139,7 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
 
             <div style={{ display: "flex", gap: 12, marginBottom: 16 }}>
                 <div style={{ flex: 1 }}>
-                    <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Month</label>
+                    <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Месец</label>
                     <input
                         type="number"
                         value={formData.periodMonth}
@@ -151,7 +151,7 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
                     />
                 </div>
                 <div style={{ flex: 1 }}>
-                    <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Year</label>
+                    <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Година</label>
                     <input
                         type="number"
                         value={formData.periodYear}
@@ -163,22 +163,22 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
             </div>
 
             <div style={{ marginBottom: 16 }}>
-                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Method</label>
+                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Метод</label>
                 <select
                     value={formData.method}
                     onChange={(e) => setFormData({ ...formData, method: e.target.value })}
                     style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 >
-                    <option value="easypay">EasyPay office</option>
-                    <option value="epay">ePay.bg online</option>
-                    <option value="cash">Cash</option>
-                    <option value="bank">Bank transfer</option>
-                    <option value="other">Other</option>
+                    <option value="easypay">Офис на EasyPay</option>
+                    <option value="epay">ePay.bg онлайн</option>
+                    <option value="cash">В брой</option>
+                    <option value="bank">Банков превод</option>
+                    <option value="other">Друго</option>
                 </select>
             </div>
 
             <div style={{ marginBottom: 16 }}>
-                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Note / Receipt #</label>
+                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Бележка / № на касова бележка</label>
                 <input
                     type="text"
                     value={formData.note}
@@ -207,7 +207,7 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
                         opacity: loading ? 0.6 : 1,
                     }}
                 >
-                    {loading ? "Saving..." : "Create Payment"}
+                    {loading ? "Запазване..." : "Създай плащане"}
                 </button>
                 <button
                     type="button"
@@ -221,7 +221,7 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
                         cursor: "pointer",
                     }}
                 >
-                    Cancel
+                    Отказ
                 </button>
             </div>
         </form>

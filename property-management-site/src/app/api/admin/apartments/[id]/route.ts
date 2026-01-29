@@ -20,7 +20,7 @@ export async function GET(
 
         if (!apartment) {
             return NextResponse.json(
-                { message: "Apartment not found" },
+                { message: "Апартаментът не е намерен" },
                 { status: 404 }
             );
         }
@@ -29,7 +29,7 @@ export async function GET(
     } catch (error) {
         console.error("Error fetching apartment:", error);
         return NextResponse.json(
-            { message: "Failed to fetch apartment" },
+            { message: "Неуспешно извличане на апартамент" },
             { status: 500 }
         );
     }
@@ -82,13 +82,13 @@ export async function PUT(
         // Handle unique constraint violation
         if (error.code === "P2002") {
             return NextResponse.json(
-                { message: "An apartment with this number and entrance already exists in this block" },
+                { message: "Апартамент с този номер и вход вече съществува в този блок" },
                 { status: 400 }
             );
         }
 
         return NextResponse.json(
-            { message: "Failed to update apartment" },
+            { message: "Неуспешно обновяване на апартамент" },
             { status: 500 }
         );
     }
@@ -108,7 +108,7 @@ export async function DELETE(
 
         if (paymentCount > 0) {
             return NextResponse.json(
-                { message: "Cannot delete apartment with payment history. Deactivate it instead." },
+                { message: "Не може да изтриете апартамент с история на плащанията. Вместо това го деактивирайте." },
                 { status: 400 }
             );
         }
@@ -117,11 +117,11 @@ export async function DELETE(
             where: { id: parseInt(id) }
         });
 
-        return NextResponse.json({ message: "Apartment deleted successfully" });
+        return NextResponse.json({ message: "Апартаментът е изтрит успешно" });
     } catch (error) {
         console.error("Error deleting apartment:", error);
         return NextResponse.json(
-            { message: "Failed to delete apartment" },
+            { message: "Неуспешно изтриване на апартамент" },
             { status: 500 }
         );
     }

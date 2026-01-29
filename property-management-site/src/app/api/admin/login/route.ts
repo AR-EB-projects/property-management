@@ -5,11 +5,11 @@ export async function POST(req: Request) {
     const { password } = await req.json();
 
     if (!process.env.ADMIN_PASSWORD) {
-        return NextResponse.json({ message: "Server not configured" }, { status: 500 });
+        return NextResponse.json({ message: "Сървърът не е конфигуриран" }, { status: 500 });
     }
 
     if (password !== process.env.ADMIN_PASSWORD) {
-        return NextResponse.json({ message: "Invalid password" }, { status: 401 });
+        return NextResponse.json({ message: "Невалидна парола" }, { status: 401 });
     }
 
     const token = await createAdminToken();

@@ -76,7 +76,7 @@ export default function ApartmentsPage() {
     };
 
     const handleDelete = async (id: number) => {
-        if (!confirm("Are you sure you want to delete this apartment?")) return;
+        if (!confirm("Сигурни ли сте, че искате да изтриете този апартамент?")) return;
 
         const res = await fetch(`/api/admin/apartments/${id}`, {
             method: "DELETE",
@@ -97,7 +97,7 @@ export default function ApartmentsPage() {
     };
 
     if (loading) {
-        return <div style={{ padding: 20, paddingTop: 100 }}>Loading...</div>;
+        return <div style={{ padding: 20, paddingTop: 100 }}>Зареждане...</div>;
     }
 
     return (
@@ -110,7 +110,7 @@ export default function ApartmentsPage() {
           marginBottom: 20,
         }}
       >
-        <h1>Apartments Management</h1>
+        <h1>Управление на апартаменти</h1>
         <div style={{ display: "flex", gap: 12 }}>
                     <button
                         onClick={() => router.push("/admin")}
@@ -123,7 +123,7 @@ export default function ApartmentsPage() {
                             cursor: "pointer",
                         }}
                     >
-                        Back to Dashboard
+                        Назад към таблото
                     </button>
                     <button
                         onClick={handleLogout}
@@ -136,19 +136,19 @@ export default function ApartmentsPage() {
                             cursor: "pointer",
                         }}
                     >
-                        Logout
+                        Изход
                     </button>
                 </div>
             </div>
 
             <div style={{ marginBottom: 20, display: "flex", gap: 12, alignItems: "center" }}>
-                <label style={{ fontWeight: "bold" }}>Filter by Block:</label>
+                <label style={{ fontWeight: "bold" }}>Филтрирай по блок:</label>
                 <select
                     value={filterBlockId}
                     onChange={(e) => setFilterBlockId(e.target.value)}
                     style={{ padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 >
-                    <option value="">All Blocks</option>
+                    <option value="">Всички блокове</option>
                     {blocks.map((block) => (
                         <option key={block.id} value={block.id}>
                             {block.name || block.address}
@@ -170,13 +170,13 @@ export default function ApartmentsPage() {
                         marginBottom: 20,
                     }}
                 >
-                    + Add New Apartment
+                    + Добави нов апартамент
                 </button>
             )}
 
             {showForm && (
                 <div style={{ marginBottom: 30, padding: 20, border: "1px solid #ddd", borderRadius: 8 }}>
-                    <h2>Create New Apartment</h2>
+                    <h2>Създай нов апартамент</h2>
                     <ApartmentForm
                         onSubmit={handleCreate}
                         onCancel={() => setShowForm(false)}
@@ -186,7 +186,7 @@ export default function ApartmentsPage() {
 
             {editingApartment && (
                 <div style={{ marginBottom: 30, padding: 20, border: "1px solid #ddd", borderRadius: 8 }}>
-                    <h2>Edit Apartment</h2>
+                    <h2>Редактирай апартамент</h2>
                     <ApartmentForm
                         initialData={editingApartment}
                         onSubmit={handleUpdate}
@@ -196,21 +196,21 @@ export default function ApartmentsPage() {
             )}
 
             <div>
-                <h2>All Apartments ({apartments.length})</h2>
+                <h2>Всички апартаменти ({apartments.length})</h2>
                 {apartments.length === 0 ? (
-                    <p>No apartments found. Create one to get started.</p>
+                    <p>Няма намерени апартаменти. Създайте такъв, за да започнете.</p>
                 ) : (
                     <table style={{ width: "100%", borderCollapse: "collapse", marginTop: 20 }}>
                         <thead>
                         <tr style={{ backgroundColor: "#f8f9fa" }}>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Block</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Number</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Floor</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Entrance</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Owner</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Payments</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Status</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Actions</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Блок</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Номер</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Етаж</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Вход</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Собственик</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Плащания</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Статус</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Действия</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -230,7 +230,7 @@ export default function ApartmentsPage() {
                                             backgroundColor: apt.isActive ? "#d4edda" : "#f8d7da",
                                             color: apt.isActive ? "#155724" : "#721c24",
                                         }}>
-                                            {apt.isActive ? "Active" : "Inactive"}
+                                            {apt.isActive ? "Активен" : "Неактивен"}
                                         </span>
                                 </td>
                                 <td style={{ padding: 12 }}>
@@ -246,7 +246,7 @@ export default function ApartmentsPage() {
                                             marginRight: 8,
                                         }}
                                     >
-                                        Edit
+                                        Редактирай
                                     </button>
                                     <button
                                         onClick={() => handleDelete(apt.id)}
@@ -259,7 +259,7 @@ export default function ApartmentsPage() {
                                             cursor: "pointer",
                                         }}
                                     >
-                                        Delete
+                                        Изтрий
                                     </button>
                                 </td>
                             </tr>

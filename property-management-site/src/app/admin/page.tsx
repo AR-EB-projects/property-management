@@ -73,7 +73,7 @@ export default function AdminHome() {
                     marginBottom: 40,
                 }}
             >
-                <h1>Property Management Admin</h1>
+                <h1>Администрация на имоти</h1>
                 <button
                     onClick={handleLogout}
                     style={{
@@ -85,12 +85,12 @@ export default function AdminHome() {
                         cursor: "pointer",
                     }}
                 >
-                    Logout
+                    Изход
                 </button>
             </div>
 
             {loading ? (
-                <p>Loading...</p>
+                <p>Зареждане...</p>
             ) : (
                 <div
                     style={{
@@ -110,7 +110,7 @@ export default function AdminHome() {
                         }}
                     >
                         <h2 style={{ fontSize: 48, margin: 0 }}>{stats.blocks}</h2>
-                        <p style={{ fontSize: 18, margin: "10px 0 0 0" }}>Total Blocks</p>
+                        <p style={{ fontSize: 18, margin: "10px 0 0 0" }}>Общо блокове</p>
                     </div>
 
                     <div
@@ -123,7 +123,7 @@ export default function AdminHome() {
                         }}
                     >
                         <h2 style={{ fontSize: 48, margin: 0 }}>{stats.apartments}</h2>
-                        <p style={{ fontSize: 18, margin: "10px 0 0 0" }}>Total Apartments</p>
+                        <p style={{ fontSize: 18, margin: "10px 0 0 0" }}>Общо апартаменти</p>
                     </div>
 
                     <div
@@ -136,7 +136,7 @@ export default function AdminHome() {
                         }}
                     >
                         <h2 style={{ fontSize: 48, margin: 0 }}>{stats.payments}</h2>
-                        <p style={{ fontSize: 18, margin: "10px 0 0 0" }}>Total Payments</p>
+                        <p style={{ fontSize: 18, margin: "10px 0 0 0" }}>Общо плащания</p>
                     </div>
                 </div>
             )}
@@ -156,9 +156,9 @@ export default function AdminHome() {
                         backgroundColor: "white",
                     }}
                 >
-                    <h2 style={{ marginTop: 0 }}>Blocks</h2>
+                    <h2 style={{ marginTop: 0 }}>Блокове</h2>
                     <p style={{ color: "#666", marginBottom: 20 }}>
-                        Manage your property blocks, addresses, and contact information.
+                        Управлявайте вашите жилищни блокове, адреси и информация за контакт.
                     </p>
                     <button
                         onClick={() => router.push("/admin/blocks")}
@@ -172,7 +172,7 @@ export default function AdminHome() {
                             width: "100%",
                         }}
                     >
-                        Manage Blocks
+                        Управление на блокове
                     </button>
                 </div>
 
@@ -184,9 +184,9 @@ export default function AdminHome() {
                         backgroundColor: "white",
                     }}
                 >
-                    <h2 style={{ marginTop: 0 }}>Apartments</h2>
+                    <h2 style={{ marginTop: 0 }}>Апартаменти</h2>
                     <p style={{ color: "#666", marginBottom: 20 }}>
-                        Manage apartments, assign owners, and track unit details.
+                        Управлявайте апартаменти, назначавайте собственици и следете детайли за обектите.
                     </p>
                     <button
                         onClick={() => router.push("/admin/apartments")}
@@ -200,7 +200,7 @@ export default function AdminHome() {
                             width: "100%",
                         }}
                     >
-                        Manage Apartments
+                        Управление на апартаменти
                     </button>
                 </div>
 
@@ -212,9 +212,9 @@ export default function AdminHome() {
                         backgroundColor: "white",
                     }}
                 >
-                    <h2 style={{ marginTop: 0 }}>Payments</h2>
+                    <h2 style={{ marginTop: 0 }}>Плащания</h2>
                     <p style={{ color: "#666", marginBottom: 20 }}>
-                        View and manage payment records for all apartments.
+                        Преглеждайте и управлявайте записи за плащания за всички апартаменти.
                     </p>
                     <button
                         onClick={() => router.push("/admin/payments")}
@@ -228,7 +228,7 @@ export default function AdminHome() {
                             width: "100%",
                         }}
                     >
-                        View Payments
+                        Преглед на плащания
                     </button>
                 </div>
             </div>

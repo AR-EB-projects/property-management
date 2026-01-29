@@ -10,14 +10,14 @@ export default function PaymentSuccess() {
     return (
         <div style={{ maxWidth: 600, margin: "80px auto", padding: 20, textAlign: "center" }}>
             <div style={{ fontSize: 64, marginBottom: 20 }}>✅</div>
-            <h1 style={{ color: "#28a745", marginBottom: 16 }}>Payment Successful!</h1>
+            <h1 style={{ color: "#28a745", marginBottom: 16 }}>Плащането е успешно!</h1>
             <p style={{ fontSize: 18, color: "#666", marginBottom: 30 }}>
-                Thank you for your payment. Your transaction has been completed successfully.
+                Благодарим Ви за плащането. Вашата транзакция приключи успешно.
             </p>
 
             {sessionId && (
                 <p style={{ fontSize: 14, color: "#999", marginBottom: 30 }}>
-                    Session ID: {sessionId}
+                    ID на сесията: {sessionId}
                 </p>
             )}
 
@@ -33,7 +33,7 @@ export default function PaymentSuccess() {
                     fontWeight: "bold"
                 }}
             >
-                Make Another Payment
+                Направи друго плащане
             </Link>
         </div>
     );

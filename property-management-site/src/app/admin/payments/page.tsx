@@ -87,7 +87,7 @@ export default function PaymentsPage() {
     };
 
     const formatDate = (dateString: string) => {
-        return new Date(dateString).toLocaleDateString("en-US", {
+        return new Date(dateString).toLocaleDateString("bg-BG", {
             year: "numeric",
             month: "short",
             day: "numeric",
@@ -96,10 +96,10 @@ export default function PaymentsPage() {
 
     const statusLabel = (status: string) => {
         const s = status || "UNKNOWN";
-        if (s === "COMPLETED") return "Completed";
-        if (s === "PENDING") return "Pending";
-        if (s === "FAILED") return "Failed";
-        if (s === "REFUNDED") return "Refunded";
+        if (s === "COMPLETED") return "Завършено";
+        if (s === "PENDING") return "Изчакващо";
+        if (s === "FAILED") return "Неуспешно";
+        if (s === "REFUNDED") return "Възстановено";
         return s;
     };
 
@@ -123,7 +123,7 @@ export default function PaymentsPage() {
     };
 
     if (loading) {
-        return <div style={{ padding: 20, paddingTop: 100 }}>Loading...</div>;
+        return <div style={{ padding: 20, paddingTop: 100 }}>Зареждане...</div>;
     }
 
     return (
@@ -136,7 +136,7 @@ export default function PaymentsPage() {
                     marginBottom: 20,
                 }}
             >
-                <h1>Payments</h1>
+                <h1>Плащания</h1>
                 <div style={{ display: "flex", gap: 12 }}>
                     <button
                         onClick={() => router.push("/admin")}
@@ -149,7 +149,7 @@ export default function PaymentsPage() {
                             cursor: "pointer",
                         }}
                     >
-                        Back to Dashboard
+                        Назад към таблото
                     </button>
                     <button
                         onClick={handleLogout}
@@ -162,33 +162,33 @@ export default function PaymentsPage() {
                             cursor: "pointer",
                         }}
                     >
-                        Logout
+                        Изход
                     </button>
                 </div>
             </div>
 
             {/* Filters */}
             <div style={{ marginBottom: 20, display: "flex", gap: 12, alignItems: "center" }}>
-                <label style={{ fontWeight: "bold" }}>Filter by Status:</label>
+                <label style={{ fontWeight: "bold" }}>Филтрирай по статус:</label>
                 <select
                     value={filterStatus}
                     onChange={(e) => setFilterStatus(e.target.value)}
                     style={{ padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 >
-                    <option value="">All Statuses</option>
-                    <option value="PENDING">Pending</option>
-                    <option value="COMPLETED">Completed</option>
-                    <option value="FAILED">Failed</option>
-                    <option value="REFUNDED">Refunded</option>
+                    <option value="">Всички статуси</option>
+                    <option value="PENDING">Изчакващо</option>
+                    <option value="COMPLETED">Завършено</option>
+                    <option value="FAILED">Неуспешно</option>
+                    <option value="REFUNDED">Възстановено</option>
                 </select>
 
-                <label style={{ fontWeight: "bold", marginLeft: 20 }}>Filter by Block:</label>
+                <label style={{ fontWeight: "bold", marginLeft: 20 }}>Филтрирай по блок:</label>
                 <select
                     value={filterBlockId}
                     onChange={(e) => setFilterBlockId(e.target.value)}
                     style={{ padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 >
-                    <option value="">All Blocks</option>
+                    <option value="">Всички блокове</option>
                     {blocks.map((block) => (
                         <option key={block.id} value={block.id}>
                             {block.name || block.address}
@@ -210,13 +210,13 @@ export default function PaymentsPage() {
                         marginBottom: 20,
                     }}
                 >
-                    + Add Manual Payment
+                    + Добави ръчно плащане
                 </button>
             )}
 
             {showForm && (
                 <div style={{ marginBottom: 30, padding: 20, border: "1px solid #ddd", borderRadius: 8 }}>
-                    <h2>Create Manual Payment</h2>
+                    <h2>Създай ръчно плащане</h2>
                     <PaymentForm
                         blocks={blocks}
                         onSubmit={handleCreateManualPayment}
@@ -226,20 +226,20 @@ export default function PaymentsPage() {
             )}
 
             <div>
-                <h2>All Payments ({payments.length})</h2>
+                <h2>Всички плащания ({payments.length})</h2>
                 {payments.length === 0 ? (
-                    <p>No payments found.</p>
+                    <p>Няма намерени плащания.</p>
                 ) : (
                     <table style={{ width: "100%", borderCollapse: "collapse", marginTop: 20 }}>
                         <thead>
                         <tr style={{ backgroundColor: "#f8f9fa" }}>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Date</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Block</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Apartment</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Amount</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Provider</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Status</th>
-                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Period</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Дата</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Блок</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Апартамент</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Сума</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Провайдър</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Статус</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Период</th>
                         </tr>
                         </thead>
                         <tbody>

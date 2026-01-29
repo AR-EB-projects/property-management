@@ -428,8 +428,8 @@ export default function Home() {
                                 />
                               </div>
                               <div className="propertynews-orc-info">
-                                <h3>First-class living also in your second home</h3>
-                                <p>Jan 20, 2026</p>
+                                <h3>Първокласен живот и във втория ви дом</h3>
+                                <p>20 януари 2026</p>
                               </div>
                             </a>
                           </div>
@@ -444,8 +444,8 @@ export default function Home() {
                                 />
                               </div>
                               <div className="propertynews-orc-info">
-                                <h3>Your elegant first home</h3>
-                                <p>Jan 20, 2026</p>
+                                <h3>Вашият елегантен първи дом</h3>
+                                <p>20 януари 2026</p>
                               </div>
                             </a>
                           </div>
@@ -460,8 +460,8 @@ export default function Home() {
                                 />
                               </div>
                               <div className="propertynews-orc-info">
-                                <h3>Prestige with horsepower</h3>
-                                <p>Jan 20, 2026</p>
+                                <h3>Престиж с конски сили</h3>
+                                <p>20 януари 2026</p>
                               </div>
                             </a>
                           </div>
@@ -476,15 +476,15 @@ export default function Home() {
                                 />
                               </div>
                               <div className="propertynews-orc-info">
-                                <h3>Discretion via private office</h3>
-                                <p>Jan 20, 2026</p>
+                                <h3>Дискретност чрез частен офис</h3>
+                                <p>20 януари 2026</p>
                               </div>
                             </a>
                           </div>
                           <div className="col-12 col-md-12 col-lg-12">
                             <div className="propertynews-all-link">
                               <a href="#">
-                                Read realty news, guides &amp; articles{" "}
+                                Прочетете имотни новини, ръководства и статии{" "}
                                 <span className="material-icons">
                                   arrow_right_alt
                                 </span>
@@ -506,8 +506,8 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="propertyMdone-heading">
-                  <h3>Property management done right!</h3>
-                  <p>Lorem ipsum sit amit</p>
+                  <h3>Управлението на имоти се прави правилно!</h3>
+                  <p>Професионално обслужване за Вашия комфорт</p>
                 </div>
               </div>
             </div>
@@ -521,15 +521,12 @@ export default function Home() {
                     src="/images/ask.png"
                     alt="img"
                   />
-                  <h3>Verified Tenants</h3>
+                  <h3>Проверени наематели</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
+                    Ние извършваме щателна проверка на всички потенциални наематели, за да гарантираме, че Вашият имот е в добри ръце и плащанията ще бъдат навременни.
                   </p>
                   <a className="propertyMdone-km-link" href="#">
-                    Know More <i className="fa fa-long-arrow-right" />
+                    Научете повече <i className="fa fa-long-arrow-right" />
                   </a>
                   <div className="propertyMdone-overlay-img">
                     <img
@@ -550,15 +547,12 @@ export default function Home() {
                     src="/images/ask.png"
                     alt="img"
                   />
-                  <h3>Tenant Management</h3>
+                  <h3>Управление на наематели</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
+                    Отговаряме за комуникацията с наемателите, разрешаването на спорове и грижата за тяхното удовлетворение, за да намалим текучеството.
                   </p>
                   <a className="propertyMdone-km-link" href="#">
-                    Know More <i className="fa fa-long-arrow-right" />
+                    Научете повече <i className="fa fa-long-arrow-right" />
                   </a>
                   <div className="propertyMdone-overlay-img">
                     <img
@@ -579,15 +573,12 @@ export default function Home() {
                     src="/images/ask.png"
                     alt="img"
                   />
-                  <h3>Maintenance &amp; Interiors</h3>
+                  <h3>Поддръжка и интериор</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
+                    Осигуряваме редовна техническа поддръжка и ремонтни дейности, както и консултации за интериорни подобрения, за да поддържаме висока стойност на имота.
                   </p>
                   <a className="propertyMdone-km-link" href="#">
-                    Know More <i className="fa fa-long-arrow-right" />
+                    Научете повече <i className="fa fa-long-arrow-right" />
                   </a>
                   <div className="propertyMdone-overlay-img">
                     <img
@@ -608,15 +599,12 @@ export default function Home() {
                     src="/images/ask.png"
                     alt="img"
                   />
-                  <h3>Rent Collection</h3>
+                  <h3>Събиране на наеми</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
+                    Гарантираме сигурно и навременно събиране на месечните наеми и такси, като предоставяме прозрачни отчети на собствениците.
                   </p>
                   <a className="propertyMdone-km-link" href="#">
-                    Know More <i className="fa fa-long-arrow-right" />
+                    Научете повече <i className="fa fa-long-arrow-right" />
                   </a>
                   <div className="propertyMdone-overlay-img">
                     <img
@@ -637,8 +625,8 @@ export default function Home() {
             <div className="row align-items-center justify-content-center">
               <div className="col-12 col-md-8 col-lg-6">
                 <div className="section-main-heading">
-                  <h4>All Property Needs - One Portal</h4>
-                  <h2>How It Works</h2>
+                  <h4>Всички нужди за имота - един портал</h4>
+                  <h2>Как работи</h2>
                 </div>
               </div>
             </div>
@@ -655,11 +643,11 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Property Information</h3>
+                    <h3>Информация за имота</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Собственикът се свързва с ДомоМениджър и сключва
+                      договор за управление на имота (апартамент/къща)
+                      от името на собственика.
                     </p>
                   </div>
                 </div>
@@ -676,11 +664,11 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Anaysis History</h3>
+                    <h3>История на анализа</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Предоставяме подробен анализ на историята на имота и
+                      пазарните тенденции, за да оптимизираме управлението
+                      и приходите от него.
                     </p>
                   </div>
                 </div>
@@ -697,11 +685,10 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Pricing Information</h3>
+                    <h3>Информация за ценообразуване</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Ние определяме най-добрата пазарна цена за Вашия имот,
+                      базирана на реални данни и конкурентен анализ.
                     </p>
                   </div>
                 </div>
@@ -718,11 +705,10 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Deal Details</h3>
+                    <h3>Детайли на сделката</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Управляваме всички аспекти на договорните отношения,
+                      осигурявайки правна сигурност и прозрачност за всички страни.
                     </p>
                   </div>
                 </div>
@@ -739,11 +725,10 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Lead Information</h3>
+                    <h3>Информация за кандидати</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Проучваме и подбираме най-подходящите наематели,
+                      като предоставяме пълна информация за тяхната надеждност.
                     </p>
                   </div>
                 </div>
@@ -760,11 +745,10 @@ export default function Home() {
                     />
                   </div>
                   <div className="howitWorks-card-body">
-                    <h3>Basic Information</h3>
+                    <h3>Основна информация</h3>
                     <p>
-                      The House owner contacts Housewise and enters into an
-                      agreement with Housewise to manage/rent-out the property
-                      (Flat/Bungalow) on the house owner’s behalf.
+                      Събираме и организираме цялата необходима документация
+                      и информация за безпроблемното управление на имота.
                     </p>
                   </div>
                 </div>

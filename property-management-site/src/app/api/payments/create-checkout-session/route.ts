@@ -12,7 +12,7 @@ export async function POST(req: Request) {
 
         if (!apartmentId || !periodMonth || !periodYear) {
             return NextResponse.json(
-                { message: "Missing required fields" },
+                { message: "Липсват задължителни полета" },
                 { status: 400 }
             );
         }
@@ -29,7 +29,7 @@ export async function POST(req: Request) {
 
         if (!apartment) {
             return NextResponse.json(
-                { message: "Apartment not found" },
+                { message: "Апартаментът не е намерен" },
                 { status: 404 }
             );
         }
@@ -48,7 +48,7 @@ export async function POST(req: Request) {
         // 🚫 Already paid → block duplicate
         if (existingPayment?.status === "COMPLETED") {
             return NextResponse.json(
-                { message: "This period is already paid." },
+                { message: "Този период вече е платен." },
                 { status: 409 }
             );
         }
@@ -86,7 +86,7 @@ export async function POST(req: Request) {
                         currency: "eur",
                         unit_amount: FIXED_AMOUNT_EUR_CENTS,
                         product_data: {
-                            name: `Maintenance fee – Apartment ${apartment.number}`,
+                            name: `Такса поддръжка – Апартамент ${apartment.number}`,
                             description: `${
                                 apartment.block.name || apartment.block.address
                             } • ${pMonth}/${pYear}`,

@@ -68,28 +68,28 @@ export default function PaymentPage() {
 
             if (!res.ok) {
                 const errJson = await res.json();
-                throw new Error(errJson.message || "Failed to initiate payment");
+                throw new Error(errJson.message || "Неуспешно стартиране на плащането");
             }
 
             const { url } = await res.json();
             window.location.href = url;
         } catch (err: any) {
-            setError(err.message || "Failed to initiate payment");
+            setError(err.message || "Неуспешно стартиране на плащането");
             setLoading(false);
         }
     };
 
     return (
         <div style={{ maxWidth: 600, margin: "40px auto", padding: 20 }}>
-            <h1>Make a Payment</h1>
+            <h1>Направи плащане</h1>
             <p style={{ color: "#666", marginBottom: 30 }}>
-                Pay your apartment maintenance fee securely with Stripe.
+                Платете таксата за поддръжка на вашия апартамент сигурно чрез Stripe.
             </p>
 
             <form onSubmit={handlePayment}>
                 <div style={{ marginBottom: 20 }}>
                     <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
-                        Select Block
+                        Изберете блок
                     </label>
                     <select
                         value={selectedBlock}
@@ -97,7 +97,7 @@ export default function PaymentPage() {
                         required
                         style={{ width: "100%", padding: 10, border: "1px solid #ccc", borderRadius: 4 }}
                     >
-                        <option value="">-- Select a block --</option>
+                        <option value="">-- Изберете блок --</option>
                         {blocks.map((block) => (
                             <option key={block.id} value={block.id}>
                                 {block.name || block.address}
@@ -108,7 +108,7 @@ export default function PaymentPage() {
 
                 <div style={{ marginBottom: 20 }}>
                     <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
-                        Select Apartment
+                        Изберете апартамент
                     </label>
                     <select
                         value={selectedApartment}
@@ -117,10 +117,10 @@ export default function PaymentPage() {
                         disabled={!selectedBlock}
                         style={{ width: "100%", padding: 10, border: "1px solid #ccc", borderRadius: 4 }}
                     >
-                        <option value="">-- Select an apartment --</option>
+                        <option value="">-- Изберете апартамент --</option>
                         {apartments.map((apt) => (
                             <option key={apt.id} value={apt.id}>
-                                Apartment {apt.number} {apt.entrance ? `(Entrance ${apt.entrance})` : ""}
+                                Апартамент {apt.number} {apt.entrance ? `(Вход ${apt.entrance})` : ""}
                             </option>
                         ))}
                     </select>
@@ -128,7 +128,7 @@ export default function PaymentPage() {
 
                 <div style={{ marginBottom: 20 }}>
                     <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
-                        Amount
+                        Сума
                     </label>
                     <div
                         style={{
@@ -147,7 +147,7 @@ export default function PaymentPage() {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 20 }}>
                     <div>
                         <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
-                            Period Month
+                            Месец
                         </label>
                         <select
                             value={periodMonth}
@@ -156,7 +156,7 @@ export default function PaymentPage() {
                         >
                             {Array.from({ length: 12 }, (_, i) => i + 1).map((month) => (
                                 <option key={month} value={month}>
-                                    {new Date(2000, month - 1).toLocaleString("en", { month: "long" })}
+                                    {new Date(2000, month - 1).toLocaleString("bg", { month: "long" })}
                                 </option>
                             ))}
                         </select>
@@ -164,7 +164,7 @@ export default function PaymentPage() {
 
                     <div>
                         <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
-                            Period Year
+                            Година
                         </label>
                         <input
                             type="number"
@@ -207,12 +207,12 @@ export default function PaymentPage() {
                         opacity: loading ? 0.6 : 1,
                     }}
                 >
-                    {loading ? "Processing..." : `Pay €${FIXED_FEE_EUR.toFixed(2)} with Stripe`}
+                    {loading ? "Обработка..." : `Плати €${FIXED_FEE_EUR.toFixed(2)} със Stripe`}
                 </button>
             </form>
 
             <p style={{ marginTop: 20, fontSize: 14, color: "#666", textAlign: "center" }}>
-                🔒 Secure payment powered by Stripe
+                🔒 Сигурно плащане чрез Stripe
             </p>
         </div>
     );

@@ -38,7 +38,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
         try {
             await onSubmit(formData);
         } catch (err: any) {
-            setError(err.message || "Failed to save block");
+            setError(err.message || "Неуспешно запазване на блок");
         } finally {
             setLoading(false);
         }
@@ -48,7 +48,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
         <form onSubmit={handleSubmit} style={{ maxWidth: 600 }}>
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Address *
+                    Адрес *
                 </label>
                 <input
                     type="text"
@@ -61,7 +61,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Name
+                    Име
                 </label>
                 <input
                     type="text"
@@ -73,7 +73,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Number of Floors
+                    Брой етажи
                 </label>
                 <input
                     type="number"
@@ -85,7 +85,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Contact Name
+                    Лице за контакт
                 </label>
                 <input
                     type="text"
@@ -97,7 +97,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Contact Phone
+                    Телефон за контакт
                 </label>
                 <input
                     type="tel"
@@ -109,7 +109,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
 
             <div style={{ marginBottom: 16 }}>
                 <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
-                    Contact Email
+                    Имейл за контакт
                 </label>
                 <input
                     type="email"
@@ -127,7 +127,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
                             checked={formData.isActive}
                             onChange={(e) => setFormData({ ...formData, isActive: e.target.checked })}
                         />
-                        <span style={{ fontWeight: "bold" }}>Active</span>
+                        <span style={{ fontWeight: "bold" }}>Активен</span>
                     </label>
                 </div>
             )}
@@ -152,7 +152,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
                         opacity: loading ? 0.6 : 1,
                     }}
                 >
-                    {loading ? "Saving..." : initialData?.id ? "Update" : "Create"}
+                    {loading ? "Запазване..." : initialData?.id ? "Обнови" : "Създай"}
                 </button>
                 <button
                     type="button"
@@ -166,7 +166,7 @@ export default function BlockForm({ initialData, onSubmit, onCancel }: BlockForm
                         cursor: "pointer",
                     }}
                 >
-                    Cancel
+                    Отказ
                 </button>
             </div>
         </form>

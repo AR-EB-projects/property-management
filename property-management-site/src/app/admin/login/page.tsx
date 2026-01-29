@@ -19,7 +19,7 @@ export default function AdminLogin() {
         });
 
         if (!res.ok) {
-            setErr("Wrong password");
+            setErr("Грешна парола");
             return;
         }
 
@@ -28,17 +28,17 @@ export default function AdminLogin() {
 
   return (
     <div style={{ maxWidth: 360, margin: "40px auto", paddingTop: 100 }}>
-      <h1>Admin Login</h1>
+      <h1>Вход за администратор</h1>
       <form onSubmit={onSubmit}>
         <input
           type="password"
-          placeholder="Admin password"
+          placeholder="Администраторска парола"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           style={{ width: "100%", padding: 10, marginTop: 12 }}
         />
         <button style={{ width: "100%", padding: 10, marginTop: 12 }}>
-          Login
+          Вход
         </button>
         {err && <p style={{ color: "red" }}>{err}</p>}
       </form>

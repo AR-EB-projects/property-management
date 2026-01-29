@@ -16,7 +16,7 @@ export async function GET() {
     } catch (error) {
         console.error("Error fetching blocks:", error);
         return NextResponse.json(
-            { message: "Failed to fetch blocks" },
+            { message: "Неуспешно извличане на блокове" },
             { status: 500 }
         );
     }
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
 
         if (!address) {
             return NextResponse.json(
-                { message: "Address is required" },
+                { message: "Адресът е задължителен" },
                 { status: 400 }
             );
         }
@@ -50,7 +50,7 @@ export async function POST(req: Request) {
     } catch (error) {
         console.error("Error creating block:", error);
         return NextResponse.json(
-            { message: "Failed to create block" },
+            { message: "Неуспешно създаване на блок" },
             { status: 500 }
         );
     }
