@@ -139,10 +139,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/Property-Management.jpeg"
+                          src="/images/cashier.jpg"
                           alt="img"
                         />
-                                  <h3>Пълно управление на сградата</h3>
+                                  <h3>Касови услуги</h3>
                       </a>
                     </div>
                     {/* item 2 */}
@@ -154,7 +154,7 @@ export default function Home() {
                           src="/images/tenant-management.webp"
                           alt="img"
                         />
-                                  <h3>Управление на наематели и такси</h3>
+                                  <h3>Професионален управител</h3>
                       </a>
                     </div>
                     {/* item 3 */}
@@ -163,10 +163,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/plot-monitoring.jpg"
+                          src="/images/business-plan.webp"
                           alt="img"
                         />
-                                  <h3>Техническа поддръжка</h3>
+                                  <h3>Юридическа консултация</h3>
                       </a>
                     </div>
                     {/* item 4 */}
@@ -175,10 +175,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/packers-movers.jpg"
+                          src="/images/clean.jpg"
                           alt="img"
                         />
-                                  <h3>Ремонтни дейности</h3>
+                                  <h3>Почистване на входа</h3>
                       </a>
                     </div>
                     {/* item 5 */}
@@ -190,7 +190,7 @@ export default function Home() {
                           src="/images/apartment-maintanence.webp"
                           alt="img"
                         />
-                                  <h3>Поддръжка на общи части</h3>
+                                  <h3>Техническа поддръжка</h3>
                       </a>
                     </div>
                     {/* item 6 */}
@@ -199,10 +199,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/business-invest-plan.webp"
+                          src="/images/entrance.png"
                           alt="img"
                         />
-                                  <h3>Финансово управление</h3>
+                                  <h3>Поддръжка на около входно пространство</h3>
                       </a>
                     </div>
                     {/* item 7 */}
@@ -211,10 +211,10 @@ export default function Home() {
                         <img
                           loading="lazy"
                           className="img-fluid"
-                          src="/images/business-plan.webp"
+                          src="/images/plot-monitoring.jpg"
                           alt="img"
                         />
-                                  <h3>Бюджетно планиране</h3>
+                                  <h3>Пълно управление на сградата</h3>
                       </a>
                     </div>
                   </div>
@@ -243,7 +243,6 @@ export default function Home() {
                           </div>
                           <div className="whyChoose-info-heading">
                             <h3>Защо да изберете ДомоМениджър</h3>
-                            <p>Lorem ipsum sit amit</p>
                           </div>
                         </div>
                         <div className="whyChoose-viewall">
@@ -274,8 +273,7 @@ export default function Home() {
                                 <div className="whychoose-card-body">
                                   <h3>Професионален домоуправител</h3>
                                   <p>
-                                    Доверете управлението на сградата на професионалисти и
-                                    се насладете на спокойствие.
+                                    Нашият опитен домоуправител ще се погрижи за всичко - от събиране на такси до организиране на ремонти.
                                   </p>
                                 </div>
                               </div>
@@ -294,8 +292,7 @@ export default function Home() {
                                 <div className="whychoose-card-body">
                                   <h3>24/7 аварийна поддръжка</h3>
                                   <p>
-                                    Доверете управлението на сградата на професионалисти и
-                                    се насладете на спокойствие.
+                                    Ние сме на разположение 24/7 за спешни случаи и аварии, за да осигурим безопасност и комфорт.
                                   </p>
                                 </div>
                               </div>
@@ -314,8 +311,7 @@ export default function Home() {
                                 <div className="whychoose-card-body">
                                   <h3>Поддържане на стойността</h3>
                                   <p>
-                                    Доверете управлението на сградата на професионалисти и
-                                    се насладете на спокойствие.
+                                    Редовната поддръжка и грижа поддържат стойността на имота ви и го правят по-привлекателен.
                                   </p>
                                 </div>
                               </div>
@@ -332,10 +328,9 @@ export default function Home() {
                                   />
                                 </div>
                                 <div className="whychoose-card-body">
-                                  <h3>Безплатна консултация</h3>
+                                  <h3>Безплатна консултация с нас</h3>
                                   <p>
-                                    Доверете управлението на сградата на професионалисти и
-                                    се насладете на спокойствие.
+                                    Свържете се с нас за безплатна среща и консултация относно управлението на вашата сграда.
                                   </p>
                                 </div>
                               </div>
@@ -352,30 +347,9 @@ export default function Home() {
                                   />
                                 </div>
                                 <div className="whychoose-card-body">
-                                  <h3>Документооборот</h3>
-                                  <p>
-                                    Доверете управлението на сградата на професионалисти и
-                                    се насладете на спокойствие.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            {/* item 6 */}
-                            <div className="carosel-item">
-                              <div className="whychoose-card-wrapper">
-                                <div className="whychoose-card-icon">
-                                  <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/renter.png"
-                                    alt="img"
-                                  />
-                                </div>
-                                <div className="whychoose-card-body">
                                   <h3>Своевременни плащания</h3>
                                   <p>
-                                    Доверете управлението на сградата на професионалисти и
-                                    се насладете на спокойствие.
+                                    Осигуряваме навременно събиране на такси и плащания към доставчици без забавяния.
                                   </p>
                                 </div>
                               </div>
