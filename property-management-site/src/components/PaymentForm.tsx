@@ -2,21 +2,18 @@
 
 import React, { useEffect, useState } from "react";
 
-type Block = { id: number; address: string; name?: string | null };
-type Apartment = { id: number; number: string; entrance?: string | null };
+type Apartment = { id: number; number: string; entrance?: string | null; payNumber: string };
 
 interface PaymentFormProps {
-    blocks: Block[];
     onSubmit: (data: any) => Promise<void>;
     onCancel: () => void;
 }
 
-export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormProps) {
+export default function PaymentForm({ onSubmit, onCancel }: PaymentFormProps) {
     const [formData, setFormData] = useState({
-        blockId: "",
-        apartmentId: "",
-        amount: "", // in BGN (e.g. 50 or 50.50)
-        currency: "bgn",
+        payNumber: "",
+        amount: "", // in EUR (e.g. 6.00)
+        currency: "eur",
         periodMonth: "",
         periodYear: "",
         method: "easypay", // easypay | epay | cash | bank | other
@@ -24,47 +21,51 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
     });
 
     const [apartments, setApartments] = useState<Apartment[]>([]);
+    const [filteredPayNumbers, setFilteredPayNumbers] = useState<string[]>([]);
+    const [showSuggestions, setShowSuggestions] = useState(false);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
     useEffect(() => {
-        const loadApts = async () => {
-            if (!formData.blockId) {
-                setApartments([]);
-                setFormData((p) => ({ ...p, apartmentId: "" }));
-                return;
-            }
+        fetchApartments();
+    }, []);
 
-            try {
-                const res = await fetch(`/api/admin/apartments?blockId=${formData.blockId}`);
-                if (!res.ok) {
-                    setApartments([]);
-                    return;
-                }
+    useEffect(() => {
+        if (formData.payNumber.trim() === "") {
+            setFilteredPayNumbers([]);
+        } else {
+            const filtered = apartments
+                .map((apt) => apt.payNumber)
+                .filter((num) => num.toLowerCase().includes(formData.payNumber.toLowerCase()))
+                .slice(0, 10);
+            setFilteredPayNumbers(filtered);
+        }
+    }, [formData.payNumber, apartments]);
 
-                const data = await res.json();
-
-                // Support BOTH shapes:
-                // 1) API returns array: [...]
-                // 2) API returns object: { apartments: [...] }
-                const list = Array.isArray(data) ? data : data.apartments;
-
-                setApartments(list || []);
-            } catch {
-                setApartments([]);
-            }
-        };
-
-        loadApts();
-    }, [formData.blockId]);
+    const fetchApartments = async () => {
+        try {
+            const res = await fetch("/api/public/apartments");
+            const data = await res.json();
+            setApartments(data);
+        } catch (err) {
+            console.error("Failed to fetch apartments:", err);
+        }
+    };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setError("");
+
+        const selectedApt = apartments.find(apt => apt.payNumber === formData.payNumber);
+        if (!selectedApt) {
+            setError("Моля изберете валиден платежен номер");
+            return;
+        }
+
         setLoading(true);
 
         try {
-            // Convert BGN to cents (stotinki)
+            // Convert EUR to cents
             const normalized = formData.amount.replace(",", ".").trim();
             const amountNum = Number(normalized);
             if (!Number.isFinite(amountNum) || amountNum <= 0) {
@@ -73,7 +74,7 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
             const amountCents = Math.round(amountNum * 100);
 
             await onSubmit({
-                apartmentId: formData.apartmentId,
+                apartmentId: selectedApt.id,
                 amount: amountCents,
                 currency: formData.currency,
                 periodMonth: formData.periodMonth ? Number(formData.periodMonth) : null,
@@ -90,48 +91,69 @@ export default function PaymentForm({ blocks, onSubmit, onCancel }: PaymentFormP
 
     return (
         <form onSubmit={handleSubmit} style={{ maxWidth: 600 }}>
-            <div style={{ marginBottom: 16 }}>
-                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Блок *</label>
-                <select
-                    value={formData.blockId}
-                    onChange={(e) => setFormData({ ...formData, blockId: e.target.value })}
+            <div style={{ marginBottom: 16, position: "relative" }}>
+                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Платёжен номер (payNumber) *</label>
+                <input
+                    type="text"
+                    value={formData.payNumber}
+                    onChange={(e) => {
+                        setFormData({ ...formData, payNumber: e.target.value });
+                        setShowSuggestions(true);
+                    }}
+                    onFocus={() => setShowSuggestions(true)}
+                    onBlur={() => {
+                        setTimeout(() => setShowSuggestions(false), 200);
+                    }}
                     required
+                    autoComplete="off"
+                    placeholder="Въведете платежен номер"
                     style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
-                >
-                    <option value="">Изберете блок</option>
-                    {blocks.map((b) => (
-                        <option key={b.id} value={b.id}>
-                            {b.name || b.address}
-                        </option>
-                    ))}
-                </select>
+                />
+                {showSuggestions && filteredPayNumbers.length > 0 && (
+                    <div
+                        style={{
+                            position: "absolute",
+                            top: "100%",
+                            left: 0,
+                            right: 0,
+                            backgroundColor: "white",
+                            border: "1px solid #ccc",
+                            borderRadius: "0 0 4px 4px",
+                            zIndex: 10,
+                            maxHeight: 200,
+                            overflowY: "auto",
+                            boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                        }}
+                    >
+                        {filteredPayNumbers.map((num) => (
+                            <div
+                                key={num}
+                                onClick={() => {
+                                    setFormData({ ...formData, payNumber: num });
+                                    setShowSuggestions(false);
+                                }}
+                                style={{
+                                    padding: "10px",
+                                    cursor: "pointer",
+                                    borderBottom: "1px solid #eee",
+                                }}
+                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#f0f0f0")}
+                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "white")}
+                            >
+                                {num}
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
 
             <div style={{ marginBottom: 16 }}>
-                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Апартамент *</label>
-                <select
-                    value={formData.apartmentId}
-                    onChange={(e) => setFormData({ ...formData, apartmentId: e.target.value })}
-                    required
-                    disabled={!formData.blockId}
-                    style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
-                >
-                    <option value="">Изберете апартамент</option>
-                    {apartments.map((a) => (
-                        <option key={a.id} value={a.id}>
-                            {a.entrance ? `Вход ${a.entrance} - ` : ""}Ап. {a.number}
-                        </option>
-                    ))}
-                </select>
-            </div>
-
-            <div style={{ marginBottom: 16 }}>
-                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Сума (лв.) *</label>
+                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>Сума (€) *</label>
                 <input
                     type="text"
                     value={formData.amount}
                     onChange={(e) => setFormData({ ...formData, amount: e.target.value })}
-                    placeholder="напр. 50 или 50.50"
+                    placeholder="напр. 6.00"
                     required
                     style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
                 />
