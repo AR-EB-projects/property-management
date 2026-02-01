@@ -44,6 +44,7 @@ export async function PUT(
         const { id } = await params;
         const body = await req.json();
         const {
+            payNumber,
             number,
             floor,
             entrance,
@@ -56,6 +57,7 @@ export async function PUT(
         const apartment = await prisma.apartment.update({
             where: { id: parseInt(id) },
             data: {
+                payNumber,
                 number,
                 floor: floor ? parseInt(floor) : null,
                 entrance,
