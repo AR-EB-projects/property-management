@@ -28,9 +28,10 @@ model Apartment {
   id      Int @id @default(autoincrement())
   blockId Int
 
-  number   String
-  floor    Int?
-  entrance String?
+  payNumber String  @unique
+  number    String
+  floor     Int?
+  entrance  String?
 
   ownerName  String?
   ownerPhone String?
@@ -45,6 +46,7 @@ model Apartment {
 
   @@unique([blockId, number, entrance])
   @@index([blockId])
+  @@index([payNumber])
 }
 
 model Payment {
