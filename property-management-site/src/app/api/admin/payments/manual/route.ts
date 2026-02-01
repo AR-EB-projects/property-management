@@ -7,7 +7,7 @@ export async function POST(req: Request) {
         const {
             apartmentId,
             amount,
-            currency = "bgn",
+            currency = "eur",
             periodYear,
             periodMonth,
             method = "easypay",
