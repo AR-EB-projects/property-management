@@ -151,7 +151,7 @@ export default function ApartmentsPage() {
                     <option value="">Всички блокове</option>
                     {blocks.map((block) => (
                         <option key={block.id} value={block.id}>
-                            {block.name || block.address}
+                            {block.address} {block.name ? `(${block.name})` : ""}
                         </option>
                     ))}
                 </select>
@@ -204,6 +204,7 @@ export default function ApartmentsPage() {
                         <thead>
                         <tr style={{ backgroundColor: "#f8f9fa" }}>
                             <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Блок</th>
+                            <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Плат. номер</th>
                             <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Номер</th>
                             <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Етаж</th>
                             <th style={{ padding: 12, textAlign: "left", borderBottom: "2px solid #dee2e6" }}>Вход</th>
@@ -216,7 +217,8 @@ export default function ApartmentsPage() {
                         <tbody>
                         {apartments.map((apt) => (
                             <tr key={apt.id} style={{ borderBottom: "1px solid #dee2e6" }}>
-                                <td style={{ padding: 12 }}>{apt.block?.name || apt.block?.address}</td>
+                                <td style={{ padding: 12 }}>{apt.block?.address} {apt.block?.name ? `(${apt.block?.name})` : ""}</td>
+                                <td style={{ padding: 12 }}>{apt.payNumber}</td>
                                 <td style={{ padding: 12 }}>{apt.number}</td>
                                 <td style={{ padding: 12 }}>{apt.floor || "-"}</td>
                                 <td style={{ padding: 12 }}>{apt.entrance || "-"}</td>
