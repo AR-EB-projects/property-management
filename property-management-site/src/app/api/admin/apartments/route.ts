@@ -43,6 +43,7 @@ export async function POST(req: Request) {
         const body = await req.json();
         const {
             blockId,
+            payNumber,
             number,
             floor,
             entrance,
@@ -51,9 +52,9 @@ export async function POST(req: Request) {
             ownerEmail
         } = body;
 
-        if (!blockId || !number) {
+        if (!blockId || !number || !payNumber) {
             return NextResponse.json(
-                { message: "ID на блок и номер на апартамент са задължителни" },
+                { message: "ID на блок, номер на апартамент и платежен номер са задължителни" },
                 { status: 400 }
             );
         }
@@ -73,6 +74,7 @@ export async function POST(req: Request) {
         const apartment = await prisma.apartment.create({
             data: {
                 blockId: parseInt(blockId),
+                payNumber,
                 number,
                 floor: floor ? parseInt(floor) : null,
                 entrance,
