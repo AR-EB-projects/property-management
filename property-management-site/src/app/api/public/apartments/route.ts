@@ -6,24 +6,24 @@ export async function GET(req: Request) {
         const { searchParams } = new URL(req.url);
         const blockId = searchParams.get("blockId");
 
-        if (!blockId) {
-            return NextResponse.json(
-                { message: "blockId is required" },
-                { status: 400 }
-            );
-        }
-
         const apartments = await prisma.apartment.findMany({
             where: {
-                blockId: parseInt(blockId),
+                ...(blockId ? { blockId: parseInt(blockId) } : {}),
                 isActive: true
             },
             select: {
                 id: true,
                 number: true,
                 entrance: true,
+                payNumber: true,
+                block: {
+                    select: {
+                        name: true,
+                        address: true
+                    }
+                }
             },
-            orderBy: { number: "asc" }
+            orderBy: { payNumber: "asc" }
         });
 
         return NextResponse.json(apartments);
