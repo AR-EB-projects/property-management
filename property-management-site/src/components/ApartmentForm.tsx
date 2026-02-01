@@ -6,6 +6,7 @@ interface ApartmentFormProps {
     initialData?: {
         id?: number;
         blockId: number;
+        payNumber: string;
         number: string;
         floor?: number;
         entrance?: string;
@@ -22,6 +23,7 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
     const [blocks, setBlocks] = useState<any[]>([]);
     const [formData, setFormData] = useState({
         blockId: initialData?.blockId || "",
+        payNumber: initialData?.payNumber || "",
         number: initialData?.number || "",
         floor: initialData?.floor || "",
         entrance: initialData?.entrance || "",
@@ -77,10 +79,23 @@ export default function ApartmentForm({ initialData, onSubmit, onCancel }: Apart
                     <option value="">Изберете блок</option>
                     {blocks.map((block) => (
                         <option key={block.id} value={block.id}>
-                            {block.name || block.address}
+                            {block.address} {block.name ? `(${block.name})` : ""}
                         </option>
                     ))}
                 </select>
+            </div>
+
+            <div style={{ marginBottom: 16 }}>
+                <label style={{ display: "block", marginBottom: 4, fontWeight: "bold" }}>
+                    Платёжен номер (payNumber) *
+                </label>
+                <input
+                    type="text"
+                    value={formData.payNumber}
+                    onChange={(e) => setFormData({ ...formData, payNumber: e.target.value })}
+                    required
+                    style={{ width: "100%", padding: 8, border: "1px solid #ccc", borderRadius: 4 }}
+                />
             </div>
 
             <div style={{ marginBottom: 16 }}>
