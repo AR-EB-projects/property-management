@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 export default function PaymentPage() {
-    const [blocks, setBlocks] = useState<any[]>([]);
+    const [payNumber, setPayNumber] = useState("");
     const [apartments, setApartments] = useState<any[]>([]);
-    const [selectedBlock, setSelectedBlock] = useState("");
-    const [selectedApartment, setSelectedApartment] = useState("");
+    const [filteredPayNumbers, setFilteredPayNumbers] = useState<string[]>([]);
+    const [showSuggestions, setShowSuggestions] = useState(false);
 
     const [periodMonth, setPeriodMonth] = useState(new Date().getMonth() + 1);
     const [periodYear, setPeriodYear] = useState(new Date().getFullYear());
@@ -16,35 +16,26 @@ export default function PaymentPage() {
     const FIXED_FEE_EUR = 6;
 
     useEffect(() => {
-        fetchBlocks();
+        fetchApartments();
     }, []);
 
     useEffect(() => {
-        if (selectedBlock) {
-            fetchApartments();
+        if (payNumber.trim() === "") {
+            setFilteredPayNumbers([]);
         } else {
-            setApartments([]);
-            setSelectedApartment("");
+            const filtered = apartments
+                .map((apt) => apt.payNumber)
+                .filter((num) => num.toLowerCase().includes(payNumber.toLowerCase()))
+                .slice(0, 10); // Limit suggestions
+            setFilteredPayNumbers(filtered);
         }
-    }, [selectedBlock]);
-
-    const fetchBlocks = async () => {
-        try {
-            const res = await fetch("/api/public/blocks");
-            const data = await res.json();
-            const list = Array.isArray(data) ? data : data.blocks;
-            setBlocks(list || []);
-        } catch (err) {
-            console.error("Failed to fetch blocks:", err);
-        }
-    };
+    }, [payNumber, apartments]);
 
     const fetchApartments = async () => {
         try {
-            const res = await fetch(`/api/public/apartments?blockId=${selectedBlock}`);
+            const res = await fetch("/api/public/apartments");
             const data = await res.json();
-            const list = Array.isArray(data) ? data : data.apartments;
-            setApartments(list || []);
+            setApartments(data);
         } catch (err) {
             console.error("Failed to fetch apartments:", err);
         }
@@ -53,6 +44,13 @@ export default function PaymentPage() {
     const handlePayment = async (e: React.FormEvent) => {
         e.preventDefault();
         setError("");
+        
+        // Final check if payNumber exists in our list
+        if (!apartments.some(apt => apt.payNumber === payNumber)) {
+            setError("Моля изберете валиден платежен номер");
+            return;
+        }
+
         setLoading(true);
 
         try {
@@ -60,7 +58,7 @@ export default function PaymentPage() {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    apartmentId: selectedApartment,
+                    payNumber,
                     periodMonth,
                     periodYear,
                 }),
@@ -87,43 +85,62 @@ export default function PaymentPage() {
             </p>
 
             <form onSubmit={handlePayment}>
-                <div style={{ marginBottom: 20 }}>
+                <div style={{ marginBottom: 20, position: "relative" }}>
                     <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
-                        Изберете блок
+                        Въведете вашия платежен номер (payNumber) *
                     </label>
-                    <select
-                        value={selectedBlock}
-                        onChange={(e) => setSelectedBlock(e.target.value)}
+                    <input
+                        type="text"
+                        value={payNumber}
+                        onChange={(e) => {
+                            setPayNumber(e.target.value);
+                            setShowSuggestions(true);
+                        }}
+                        onFocus={() => setShowSuggestions(true)}
+                        onBlur={() => {
+                            // Delay hiding to allow clicking on suggestion
+                            setTimeout(() => setShowSuggestions(false), 200);
+                        }}
                         required
+                        autoComplete="off"
                         style={{ width: "100%", padding: 10, border: "1px solid #ccc", borderRadius: 4 }}
-                    >
-                        <option value="">-- Изберете блок --</option>
-                        {blocks.map((block) => (
-                            <option key={block.id} value={block.id}>
-                                {block.name || block.address}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-
-                <div style={{ marginBottom: 20 }}>
-                    <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
-                        Изберете апартамент
-                    </label>
-                    <select
-                        value={selectedApartment}
-                        onChange={(e) => setSelectedApartment(e.target.value)}
-                        required
-                        disabled={!selectedBlock}
-                        style={{ width: "100%", padding: 10, border: "1px solid #ccc", borderRadius: 4 }}
-                    >
-                        <option value="">-- Изберете апартамент --</option>
-                        {apartments.map((apt) => (
-                            <option key={apt.id} value={apt.id}>
-                                Апартамент {apt.number} {apt.entrance ? `(Вход ${apt.entrance})` : ""}
-                            </option>
-                        ))}
-                    </select>
+                    />
+                    {showSuggestions && filteredPayNumbers.length > 0 && (
+                        <div
+                            style={{
+                                position: "absolute",
+                                top: "100%",
+                                left: 0,
+                                right: 0,
+                                backgroundColor: "white",
+                                border: "1px solid #ccc",
+                                borderRadius: "0 0 4px 4px",
+                                zIndex: 10,
+                                maxHeight: 200,
+                                overflowY: "auto",
+                                boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                            }}
+                        >
+                            {filteredPayNumbers.map((num) => (
+                                <div
+                                    key={num}
+                                    onClick={() => {
+                                        setPayNumber(num);
+                                        setShowSuggestions(false);
+                                    }}
+                                    style={{
+                                        padding: "10px",
+                                        cursor: "pointer",
+                                        borderBottom: "1px solid #eee",
+                                    }}
+                                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#f0f0f0")}
+                                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "white")}
+                                >
+                                    {num}
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
 
                 <div style={{ marginBottom: 20 }}>
