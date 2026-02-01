@@ -8,22 +8,21 @@ const PROVIDER = "stripe";
 export async function POST(req: Request) {
     try {
         const body = await req.json();
-        const { apartmentId, periodMonth, periodYear } = body;
+        const { payNumber, periodMonth, periodYear } = body;
 
-        if (!apartmentId || !periodMonth || !periodYear) {
+        if (!payNumber || !periodMonth || !periodYear) {
             return NextResponse.json(
                 { message: "Липсват задължителни полета" },
                 { status: 400 }
             );
         }
 
-        const aptId = Number(apartmentId);
         const pMonth = Number(periodMonth);
         const pYear = Number(periodYear);
 
         // 1️⃣ Ensure apartment exists
         const apartment = await prisma.apartment.findUnique({
-            where: { id: aptId },
+            where: { payNumber },
             include: { block: true },
         });
 
@@ -33,6 +32,8 @@ export async function POST(req: Request) {
                 { status: 404 }
             );
         }
+
+        const aptId = apartment.id;
 
         // 2️⃣ Check for existing payment for same apartment + period + provider
         const existingPayment = await prisma.payment.findFirst({
@@ -86,8 +87,8 @@ export async function POST(req: Request) {
                         currency: "eur",
                         unit_amount: FIXED_AMOUNT_EUR_CENTS,
                         product_data: {
-                            name: `Такса поддръжка – Апартамент ${apartment.number}`,
-                            description: `${
+                            name: `Такса поддръжка – Плат. номер ${apartment.payNumber}`,
+                            description: `Апартамент ${apartment.number} • ${
                                 apartment.block.name || apartment.block.address
                             } • ${pMonth}/${pYear}`,
                         },
