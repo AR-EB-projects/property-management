@@ -79,8 +79,8 @@ export default function PaymentsPage() {
     };
 
     const formatCurrency = (amount: number, currency: string) => {
-        const safeCurrency = (currency || "USD").toUpperCase();
-        return new Intl.NumberFormat("en-US", {
+        const safeCurrency = (currency || "EUR").toUpperCase();
+        return new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: safeCurrency,
         }).format((amount || 0) / 100);
@@ -218,7 +218,6 @@ export default function PaymentsPage() {
                 <div style={{ marginBottom: 30, padding: 20, border: "1px solid #ddd", borderRadius: 8 }}>
                     <h2>Създай ръчно плащане</h2>
                     <PaymentForm
-                        blocks={blocks}
                         onSubmit={handleCreateManualPayment}
                         onCancel={() => setShowForm(false)}
                     />
