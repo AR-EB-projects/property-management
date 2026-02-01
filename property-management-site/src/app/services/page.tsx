@@ -35,16 +35,11 @@ export default function Services() {
                                     src="/images/ask.png"
                                     alt="img"
                                 />
-                                <h3>Verified Tenants</h3>
+                                <h3>Защо да изберем професионален домоуправител, а не съсед?</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
+                                    Законът за управление на етажната собственост изисква всяка сграда да има управление, което да отговаря за документацията, финансите и решенията на Общото събрание.
+                                    Когато тази роля се изпълнява от професионален домоуправител, входът получава законосъобразно управление, прозрачност и спокойствие, без лични конфликти между съседи. Ние поемаме цялата административна и организационна тежест вместо вас.
                                 </p>
-                                <a className="propertyMdone-km-link" href="#">
-                                    Know More <i className="fa fa-long-arrow-right" />
-                                </a>
                                 <div className="propertyMdone-overlay-img">
                                     <img
                                         loading="lazy"
@@ -64,16 +59,11 @@ export default function Services() {
                                     src="/images/ask.png"
                                     alt="img"
                                 />
-                                <h3>Tenant Management</h3>
+                                <h3>Законно ли е входът да има външна фирма за управление?</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
+                                    Да.
+                                    ЗУЕС изрично позволява управлението на етажната собственост да бъде възложено на професионален домоуправител чрез договор, прието с решение на Общо събрание. Това гарантира, че всички дейности – събиране на такси, поддръжка, ремонти и отчетност – се извършват по закон.
                                 </p>
-                                <a className="propertyMdone-km-link" href="#">
-                                    Know More <i className="fa fa-long-arrow-right" />
-                                </a>
                                 <div className="propertyMdone-overlay-img">
                                     <img
                                         loading="lazy"
@@ -93,16 +83,11 @@ export default function Services() {
                                     src="/images/ask.png"
                                     alt="img"
                                 />
-                                <h3>Maintenance &amp; Interiors</h3>
+                                <h3>Как се гарантира прозрачност при управлението на парите?</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
+                                    Законът изисква ясно и отчетно управление на средствата на етажната собственост.
+                                    Като професионален домоуправител, ние осигуряваме пълна финансова прозрачност – ясно разпределение на таксите, отчет за разходите и контрол върху средствата, включително във фонд „Ремонт и обновление“.
                                 </p>
-                                <a className="propertyMdone-km-link" href="#">
-                                    Know More <i className="fa fa-long-arrow-right" />
-                                </a>
                                 <div className="propertyMdone-overlay-img">
                                     <img
                                         loading="lazy"
@@ -122,16 +107,11 @@ export default function Services() {
                                     src="/images/ask.png"
                                     alt="img"
                                 />
-                                <h3>Rent Collection</h3>
+                                <h3>Как професионалният домоуправител улеснява живота на собствениците?</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
+                                    Нашата задача е да бъдем връзката между закона и ежедневието във входа.
+                                    Ние поемаме организацията, документацията и спазването на Закона за управление на етажната собственост, така че собствениците да не се занимават с административни проблеми и да живеят в поддържана и добре управлявана сграда.
                                 </p>
-                                <a className="propertyMdone-km-link" href="#">
-                                    Know More <i className="fa fa-long-arrow-right" />
-                                </a>
                                 <div className="propertyMdone-overlay-img">
                                     <img
                                         loading="lazy"

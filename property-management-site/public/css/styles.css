@@ -1096,19 +1096,19 @@ ul {
 }
 
 .mdc-1 {
-    background: #2CD6D6;
+    background: var(--theme-color-1);
 }
 
 .mdc-2 {
-    background: #FF5F16;
+    background: var(--theme-color-2);
 }
 
 .mdc-3 {
-    background: #162DFF;
+    background: var(--theme-color-3);
 }
 
 .mdc-4 {
-    background: #A729F4;
+    background: var(--footer-bg);
 }
 
 .propertyMdone-card h3 {
