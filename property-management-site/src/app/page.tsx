@@ -222,518 +222,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* why choose */}
-        <div className="section whyChoose">
-          <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-12 col-md-11 col-lg-11 col-xl-11">
-                <div className="whyChoose-inner-container">
-                  <div className="row">
-                    <div className="col-12 col-md-12 col-lg-12">
-                      <div className="whyChoose-heading-wrapper">
-                        <div className="whyChoose-heading-icon">
-                          <div className="whyChoose-icon">
-                            <img
-                              loading="lazy"
-                              className="img-fluid"
-                              src="/images/ask.png"
-                              alt="img"
-                            />
-                          </div>
-                          <div className="whyChoose-info-heading">
-                            <h3>Защо да изберете ДомоМениджър</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* contents */}
-                  <div className="row mt-4">
-                    <div className="col-12 col-md-12 col-lg-12 col-xl-12">
-                      <div className="whychoose-slider-wrapper">
-                        <div className="carosel-root">
-                          <div className="carosel whychoose">
-                            {/* item 1 */}
-                            <div className="carosel-item">
-                              <div className="whychoose-card-wrapper">
-                                <div className="whychoose-card-icon">
-                                  <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/renter.png"
-                                    alt="img"
-                                  />
-                                </div>
-                                <div className="whychoose-card-body">
-                                  <h3>Професионален домоуправител</h3>
-                                  <p>
-                                    Нашият опитен домоуправител ще се погрижи за всичко - от събиране на такси до организиране на ремонти.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            {/* item 2 */}
-                            <div className="carosel-item">
-                              <div className="whychoose-card-wrapper">
-                                <div className="whychoose-card-icon">
-                                  <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/renter.png"
-                                    alt="img"
-                                  />
-                                </div>
-                                <div className="whychoose-card-body">
-                                  <h3>24/7 аварийна поддръжка</h3>
-                                  <p>
-                                    Ние сме на разположение 24/7 за спешни случаи и аварии, за да осигурим безопасност и комфорт.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            {/* item 3 */}
-                            <div className="carosel-item">
-                              <div className="whychoose-card-wrapper">
-                                <div className="whychoose-card-icon">
-                                  <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/renter.png"
-                                    alt="img"
-                                  />
-                                </div>
-                                <div className="whychoose-card-body">
-                                  <h3>Поддържане на стойността</h3>
-                                  <p>
-                                    Редовната поддръжка и грижа поддържат стойността на имота ви и го правят по-привлекателен.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            {/* item 4 */}
-                            <div className="carosel-item">
-                              <div className="whychoose-card-wrapper">
-                                <div className="whychoose-card-icon">
-                                  <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/renter.png"
-                                    alt="img"
-                                  />
-                                </div>
-                                <div className="whychoose-card-body">
-                                  <h3>Безплатна консултация с нас</h3>
-                                  <p>
-                                    Свържете се с нас за безплатна среща и консултация относно управлението на вашата сграда.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            {/* item 5 */}
-                            <div className="carosel-item">
-                              <div className="whychoose-card-wrapper">
-                                <div className="whychoose-card-icon">
-                                  <img
-                                    loading="lazy"
-                                    className="img-fluid"
-                                    src="/images/renter.png"
-                                    alt="img"
-                                  />
-                                </div>
-                                <div className="whychoose-card-body">
-                                  <h3>Своевременни плащания</h3>
-                                  <p>
-                                    Осигуряваме навременно събиране на такси и плащания към доставчици без забавяния.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* property news */}
-        <div className="section propertyNews">
-          <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-12 col-md-8 col-lg-6">
-                <div className="section-main-heading">
-                  <h4>All Property Needs - One Portal</h4>
-                  <h2>Find Better Places to Live, Work and Wonder.</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12 col-md-6 col-lg-6 mb-4">
-                <div className="propertynews-image">
-                  <img
-                    loading="lazy"
-                    className="img-fluid"
-                    src="/images/modern-apartment-architecture.jpg"
-                    alt="img"
-                  />
-                </div>
-              </div>
-              <div className="col-12 col-md-6 offset-lg-1 col-lg-5 mb-4">
-                <div className="propertynews-main-content">
-                  <h4>RENT A HOME</h4>
-                  <h3>
-                    Find, Buy &amp; Own Your
-                    <br /> Dream Home
-                  </h3>
-                  <p>
-                    Explore from Apartments, land, builder floors,
-                    <br />
-                    villas and more
-                  </p>
-                  <a className="theme-btn btn-secondary" href="rental-property">
-                    Explore Buying
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="row align-items-center justify-content-center">
-              <div className="col-12 col-md-11 col-lg-11 col-xl-11">
-                <div className="propertynews-overlay">
-                  <div className="row">
-                    <div className="col-12 col-md-4 col-lg-4 col-xl-4">
-                      <div className="propertynews-overlay-left">
-                        <h3>Articles and guides for property owners</h3>
-                        <p>Read from Beginners check-list to Pro Tips</p>
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-8 col-lg-8 col-xl-8">
-                      <div className="propertynews-overlay-right">
-                        <div className="row">
-                          <div className="col-12 col-md-12 col-lg-6 mb-4">
-                            <a href="#" className="propertynews-overlay-right-card">
-                              <div className="propertynews-orc-image">
-                                <img
-                                  loading="lazy"
-                                  className="img-fluid"
-                                  src="/images/blog-1.jpg"
-                                  alt="img"
-                                />
-                              </div>
-                              <div className="propertynews-orc-info">
-                                <h3>First-class living also in your second home</h3>
-                                <p>Jan 20, 2026</p>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="col-12 col-md-12 col-lg-6 mb-4">
-                            <a href="#" className="propertynews-overlay-right-card">
-                              <div className="propertynews-orc-image">
-                                <img
-                                  loading="lazy"
-                                  className="img-fluid"
-                                  src="/images/blog-2.jpg"
-                                  alt="img"
-                                />
-                              </div>
-                              <div className="propertynews-orc-info">
-                                <h3>Your elegant first home</h3>
-                                <p>Jan 20, 2026</p>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="col-12 col-md-12 col-lg-6 mb-4">
-                            <a href="#" className="propertynews-overlay-right-card">
-                              <div className="propertynews-orc-image">
-                                <img
-                                  loading="lazy"
-                                  className="img-fluid"
-                                  src="/images/blog-3.webp"
-                                  alt="img"
-                                />
-                              </div>
-                              <div className="propertynews-orc-info">
-                                <h3>Prestige with horsepower</h3>
-                                <p>Jan 20, 2026</p>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="col-12 col-md-12 col-lg-6 mb-4">
-                            <a href="#" className="propertynews-overlay-right-card">
-                              <div className="propertynews-orc-image">
-                                <img
-                                  loading="lazy"
-                                  className="img-fluid"
-                                  src="/images/blog-4.webp"
-                                  alt="img"
-                                />
-                              </div>
-                              <div className="propertynews-orc-info">
-                                <h3>Discretion via private office</h3>
-                                <p>Jan 20, 2026</p>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="col-12 col-md-12 col-lg-12">
-                            <div className="propertynews-all-link">
-                              <a href="#">
-                                Read realty news, guides &amp; articles{" "}
-                                <span className="material-icons">
-                                  arrow_right_alt
-                                </span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* property management */}
-        <div className="section propertyMdone pt-0">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="propertyMdone-heading">
-                  <h3>Property management done right!</h3>
-                  <p>Lorem ipsum sit amit</p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              {/* card 1 */}
-              <div className="col-12 col-md-6 col-lg-6 mb-4">
-                <div className="propertyMdone-card mdc-1">
-                  <img
-                    loading="lazy"
-                    className="img-fluid"
-                    src="/images/ask.png"
-                    alt="img"
-                  />
-                  <h3>Защо да изберем професионален домоуправител, а не съсед?</h3>
-                  <p>
-                    Законът за управление на етажната собственост изисква всяка сграда да има управление, което да отговаря за документацията, финансите и решенията на Общото събрание.
-                    Когато тази роля се изпълнява от професионален домоуправител, входът получава законосъобразно управление, прозрачност и спокойствие, без лични конфликти между съседи. Ние поемаме цялата административна и организационна тежест вместо вас.
-                  </p>
-                  <div className="propertyMdone-overlay-img">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/realEstate-img.png"
-                      alt="img"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* card 2 */}
-              <div className="col-12 col-md-6 col-lg-6 mb-4">
-                <div className="propertyMdone-card mdc-2">
-                  <img
-                    loading="lazy"
-                    className="img-fluid"
-                    src="/images/ask.png"
-                    alt="img"
-                  />
-                  <h3>Законно ли е входът да има външна фирма за управление?</h3>
-                  <p>
-                    Да.
-                    ЗУЕС изрично позволява управлението на етажната собственост да бъде възложено на професионален домоуправител чрез договор, прието с решение на Общо събрание. Това гарантира, че всички дейности – събиране на такси, поддръжка, ремонти и отчетност – се извършват по закон.
-                  </p>
-                  <div className="propertyMdone-overlay-img">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/realEstate-img.png"
-                      alt="img"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* card 3 */}
-              <div className="col-12 col-md-6 col-lg-6 mb-4">
-                <div className="propertyMdone-card mdc-3">
-                  <img
-                    loading="lazy"
-                    className="img-fluid"
-                    src="/images/ask.png"
-                    alt="img"
-                  />
-                  <h3>Как се гарантира прозрачност при управлението на парите?</h3>
-                  <p>
-                    Законът изисква ясно и отчетно управление на средствата на етажната собственост.
-                    Като професионален домоуправител, ние осигуряваме пълна финансова прозрачност – ясно разпределение на таксите, отчет за разходите и контрол върху средствата, включително във фонд „Ремонт и обновление“.
-                  </p>
-                  <div className="propertyMdone-overlay-img">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/realEstate-img.png"
-                      alt="img"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* card 4 */}
-              <div className="col-12 col-md-6 col-lg-6 mb-4">
-                <div className="propertyMdone-card mdc-4">
-                  <img
-                    loading="lazy"
-                    className="img-fluid"
-                    src="/images/ask.png"
-                    alt="img"
-                  />
-                  <h3>Как професионалният домоуправител улеснява живота на собствениците?</h3>
-                  <p>
-                    Нашата задача е да бъдем връзката между закона и ежедневието във входа.
-                    Ние поемаме организацията, документацията и спазването на Закона за управление на етажната собственост, така че собствениците да не се занимават с административни проблеми и да живеят в поддържана и добре управлявана сграда.
-                  </p>
-                  <div className="propertyMdone-overlay-img">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/realEstate-img.png"
-                      alt="img"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         {/* how it works */}
-        <div className="section howitWorks">
-          <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-12 col-md-8 col-lg-6">
-                <div className="section-main-heading">
-                  <h4>Всички нужди за вашия вход – Една платформа</h4>
-                  <h2>Как работи</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row align-items-center justify-content-center">
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                {/* card 1 */}
-                <div className="howitWorks-card">
-                  <div className="howitWorks-card-icon hiw-1">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/real-estate.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="howitWorks-card-body">
-                    <h3>Касиер</h3>
-                    <p>
-                      Осигурява точна и бърза обработка на плащанията на наематели и собственици, следи за финансовата документация и отчети.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                {/* card 2 */}
-                <div className="howitWorks-card">
-                  <div className="howitWorks-card-icon hiw-2">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/file.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="howitWorks-card-body">
-                    <h3>Управител</h3>
-                    <p>
-                      Координира всички дейности в сградата, следи за спазването на правилата и осигурява комфорт и безопасност за живущите.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                {/* card 3 */}
-                <div className="howitWorks-card">
-                  <div className="howitWorks-card-icon hiw-3">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/price-tag.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="howitWorks-card-body">
-                    <h3>Юрист</h3>
-                    <p>
-                      Предоставя правна помощ при договори, спорове и други въпроси, свързани с имота и неговото управление.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                {/* card 4 */}
-                <div className="howitWorks-card">
-                  <div className="howitWorks-card-icon hiw-4">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/deal.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="howitWorks-card-body">
-                    <h3>Почистване на входа</h3>
-                    <p>
-                      Поддържа общите части чисти и приветливи, осигурявайки редовна поддръжка на входните пространства.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                {/* card 5 */}
-                <div className="howitWorks-card">
-                  <div className="howitWorks-card-icon hiw-5">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/pay-per-lead.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="howitWorks-card-body">
-                    <h3>Техник</h3>
-                    <p>
-                      Извършва ремонти и техническа поддръжка на сградата, решава аварийни ситуации и поддържа системите в изправност.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                {/* card 6 */}
-                <div className="howitWorks-card">
-                  <div className="howitWorks-card-icon hiw-6">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/application.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="howitWorks-card-body">
-                    <h3>Поддръжка на около входното пространство</h3>
-                    <p>
-                      Грижи се за озеленяване, осветление и безопасността на околните площи, създавайки приятна среда за живущите.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         {/* projects */}
         {/* <div className="section projects">
           <div className="container">
@@ -1089,6 +578,610 @@ export default function Home() {
             </div>
           </div>
         </div> */}
+        {/* plans */}
+        <div id="plans">
+        <div className="section plans d-none d-md-none d-lg-block">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="plans-wrapper">
+                  <div className="plans-head">
+                    <div className="plans-head-item">
+                      <h5>&nbsp;</h5>
+                    </div>
+                    <div className="plans-head-item">
+                      <div className="plans-head-item-inner phii-1">
+                        <h3>Стандартен пакет</h3>
+                        <p>Всички необходими услуги за вашия имот</p>
+                        <h2>6 EUR</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="plans-body">
+                    <div className="plans-body-row">
+                      <div className="plans-body-item">
+                        <h3 className="plans-body-item-heading">Касиер</h3>
+                      </div>
+                      <div className="plans-body-item">
+                        <div className="plans-body-item-include">
+                          <img
+                            loading="lazy"
+                            className="img-fluid"
+                            src="/images/check.png"
+                            alt="img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="plans-body-row">
+                      <div className="plans-body-item">
+                        <h3 className="plans-body-item-heading">Управител</h3>
+                      </div>
+                      <div className="plans-body-item">
+                        <div className="plans-body-item-include">
+                          <img
+                            loading="lazy"
+                            className="img-fluid"
+                            src="/images/check.png"
+                            alt="img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="plans-body-row">
+                      <div className="plans-body-item">
+                        <h3 className="plans-body-item-heading">Юрист</h3>
+                      </div>
+                      <div className="plans-body-item">
+                        <div className="plans-body-item-include">
+                          <img
+                            loading="lazy"
+                            className="img-fluid"
+                            src="/images/check.png"
+                            alt="img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="plans-body-row">
+                      <div className="plans-body-item">
+                        <h3 className="plans-body-item-heading">
+                          Почистване на входа
+                        </h3>
+                      </div>
+                      <div className="plans-body-item">
+                        <div className="plans-body-item-include">
+                          <img
+                            loading="lazy"
+                            className="img-fluid"
+                            src="/images/check.png"
+                            alt="img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="plans-body-row">
+                      <div className="plans-body-item">
+                        <h3 className="plans-body-item-heading">Техник</h3>
+                      </div>
+                      <div className="plans-body-item">
+                        <div className="plans-body-item-include">
+                          <img
+                            loading="lazy"
+                            className="img-fluid"
+                            src="/images/check.png"
+                            alt="img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="plans-body-row">
+                      <div className="plans-body-item">
+                        <h3 className="plans-body-item-heading">
+                          Поддръжка на около входното пространство
+                        </h3>
+                      </div>
+                      <div className="plans-body-item">
+                        <div className="plans-body-item-include">
+                          <img
+                            loading="lazy"
+                            className="img-fluid"
+                            src="/images/check.png"
+                            alt="img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="section plans-mobile pt-0 d-block d-md-block d-lg-none">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="plans-wrapper">
+                  <div className="plans-head">
+                    <div className="plans-head-item">
+                      <div className="plans-head-item-inner phii-1">
+                        <h3>Пълен пакет услуги</h3>
+                        <p>Всички необходими услуги за вашия имот</p>
+                        <h2>6 EUR</h2>
+                        <ul className="plans-head-item-inner-list">
+                          <li>Касиер</li>
+                          <li>Управител</li>
+                          <li>Юрист</li>
+                          <li>Почистване на входа</li>
+                          <li>Техник</li>
+                          <li>Поддръжка на около входното пространство</li>
+                        </ul>
+                        <a className="theme-btn btn-secondary" href="#">
+                          Започнете сега
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="services" className="section howitWorks">
+          <div className="container">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-12 col-md-8 col-lg-6">
+                <div className="section-main-heading">
+                  <h4>Всички нужди за вашия вход – Една платформа</h4>
+                  <h2>Услуги</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row align-items-center justify-content-center">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                {/* card 1 */}
+                <div className="howitWorks-card">
+                  <div className="howitWorks-card-icon hiw-1">
+                    <img
+                        loading="lazy"
+                        className="img-fluid"
+                        src="/images/real-estate.png"
+                        alt="img"
+                    />
+                  </div>
+                  <div className="howitWorks-card-body">
+                    <h3>Касиер</h3>
+                    <p>
+                      Осигурява точна и бърза обработка на плащанията на наематели и собственици, следи за финансовата документация и отчети.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                {/* card 2 */}
+                <div className="howitWorks-card">
+                  <div className="howitWorks-card-icon hiw-2">
+                    <img
+                        loading="lazy"
+                        className="img-fluid"
+                        src="/images/file.png"
+                        alt="img"
+                    />
+                  </div>
+                  <div className="howitWorks-card-body">
+                    <h3>Управител</h3>
+                    <p>
+                      Координира всички дейности в сградата, следи за спазването на правилата и осигурява комфорт и безопасност за живущите.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                {/* card 3 */}
+                <div className="howitWorks-card">
+                  <div className="howitWorks-card-icon hiw-3">
+                    <img
+                        loading="lazy"
+                        className="img-fluid"
+                        src="/images/price-tag.png"
+                        alt="img"
+                    />
+                  </div>
+                  <div className="howitWorks-card-body">
+                    <h3>Юрист</h3>
+                    <p>
+                      Предоставя правна помощ при договори, спорове и други въпроси, свързани с имота и неговото управление.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                {/* card 4 */}
+                <div className="howitWorks-card">
+                  <div className="howitWorks-card-icon hiw-4">
+                    <img
+                        loading="lazy"
+                        className="img-fluid"
+                        src="/images/deal.png"
+                        alt="img"
+                    />
+                  </div>
+                  <div className="howitWorks-card-body">
+                    <h3>Почистване на входа</h3>
+                    <p>
+                      Поддържа общите части чисти и приветливи, осигурявайки редовна поддръжка на входните пространства.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                {/* card 5 */}
+                <div className="howitWorks-card">
+                  <div className="howitWorks-card-icon hiw-5">
+                    <img
+                        loading="lazy"
+                        className="img-fluid"
+                        src="/images/pay-per-lead.png"
+                        alt="img"
+                    />
+                  </div>
+                  <div className="howitWorks-card-body">
+                    <h3>Техник</h3>
+                    <p>
+                      Извършва ремонти и техническа поддръжка на сградата, решава аварийни ситуации и поддържа системите в изправност.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                {/* card 6 */}
+                <div className="howitWorks-card">
+                  <div className="howitWorks-card-icon hiw-6">
+                    <img
+                        loading="lazy"
+                        className="img-fluid"
+                        src="/images/application.png"
+                        alt="img"
+                    />
+                  </div>
+                  <div className="howitWorks-card-body">
+                    <h3>Поддръжка на около входното пространство</h3>
+                    <p>
+                      Грижи се за озеленяване, осветление и безопасността на околните площи, създавайки приятна среда за живущите.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* why choose */}
+        <div className="section whyChoose">
+          <div className="container">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-12 col-md-11 col-lg-11 col-xl-11">
+                <div className="whyChoose-inner-container">
+                  <div className="row">
+                    <div className="col-12 col-md-12 col-lg-12">
+                      <div className="whyChoose-heading-wrapper">
+                        <div className="whyChoose-heading-icon">
+                          <div className="whyChoose-icon">
+                            <img
+                                loading="lazy"
+                                className="img-fluid"
+                                src="/images/ask.png"
+                                alt="img"
+                            />
+                          </div>
+                          <div className="whyChoose-info-heading">
+                            <h3>Защо да изберете ДомоМениджър</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* contents */}
+                  <div className="row mt-4">
+                    <div className="col-12 col-md-12 col-lg-12 col-xl-12">
+                      <div className="whychoose-slider-wrapper">
+                        <div className="carosel-root">
+                          <div className="carosel whychoose">
+                            {/* item 1 */}
+                            <div className="carosel-item">
+                              <div className="whychoose-card-wrapper">
+                                <div className="whychoose-card-icon">
+                                  <img
+                                      loading="lazy"
+                                      className="img-fluid"
+                                      src="/images/renter.png"
+                                      alt="img"
+                                  />
+                                </div>
+                                <div className="whychoose-card-body">
+                                  <h3>Професионален домоуправител</h3>
+                                  <p>
+                                    Нашият опитен домоуправител ще се погрижи за всичко - от събиране на такси до организиране на ремонти.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            {/* item 2 */}
+                            <div className="carosel-item">
+                              <div className="whychoose-card-wrapper">
+                                <div className="whychoose-card-icon">
+                                  <img
+                                      loading="lazy"
+                                      className="img-fluid"
+                                      src="/images/renter.png"
+                                      alt="img"
+                                  />
+                                </div>
+                                <div className="whychoose-card-body">
+                                  <h3>24/7 аварийна поддръжка</h3>
+                                  <p>
+                                    Ние сме на разположение 24/7 за спешни случаи и аварии, за да осигурим безопасност и комфорт.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            {/* item 3 */}
+                            <div className="carosel-item">
+                              <div className="whychoose-card-wrapper">
+                                <div className="whychoose-card-icon">
+                                  <img
+                                      loading="lazy"
+                                      className="img-fluid"
+                                      src="/images/renter.png"
+                                      alt="img"
+                                  />
+                                </div>
+                                <div className="whychoose-card-body">
+                                  <h3>Поддържане на стойността</h3>
+                                  <p>
+                                    Редовната поддръжка и грижа поддържат стойността на имота ви и го правят по-привлекателен.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            {/* item 4 */}
+                            <div className="carosel-item">
+                              <div className="whychoose-card-wrapper">
+                                <div className="whychoose-card-icon">
+                                  <img
+                                      loading="lazy"
+                                      className="img-fluid"
+                                      src="/images/renter.png"
+                                      alt="img"
+                                  />
+                                </div>
+                                <div className="whychoose-card-body">
+                                  <h3>Безплатна консултация с нас</h3>
+                                  <p>
+                                    Свържете се с нас за безплатна среща и консултация относно управлението на вашата сграда.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            {/* item 5 */}
+                            <div className="carosel-item">
+                              <div className="whychoose-card-wrapper">
+                                <div className="whychoose-card-icon">
+                                  <img
+                                      loading="lazy"
+                                      className="img-fluid"
+                                      src="/images/renter.png"
+                                      alt="img"
+                                  />
+                                </div>
+                                <div className="whychoose-card-body">
+                                  <h3>Своевременни плащания</h3>
+                                  <p>
+                                    Осигуряваме навременно събиране на такси и плащания към доставчици без забавяния.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* property management */}
+        <div className="section propertyMdone pt-0">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="propertyMdone-heading">
+                  <h3>Отговори на най-честите въпроси за управлението на входа</h3>
+                  <p>Професионален домоуправител, законово съответствие, прозрачни финанси и подкрепа за собствениците.</p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              {/* card 1 */}
+              <div className="col-12 col-md-6 col-lg-6 mb-4">
+                <div className="propertyMdone-card mdc-1">
+                  <img
+                    loading="lazy"
+                    className="img-fluid"
+                    src="/images/ask.png"
+                    alt="img"
+                  />
+                  <h3>Защо да изберем професионален домоуправител, а не съсед?</h3>
+                  <p>
+                    Законът за управление на етажната собственост изисква всяка сграда да има управление, което да отговаря за документацията, финансите и решенията на Общото събрание.
+                    Когато тази роля се изпълнява от професионален домоуправител, входът получава законосъобразно управление, прозрачност и спокойствие, без лични конфликти между съседи. Ние поемаме цялата административна и организационна тежест вместо вас.
+                  </p>
+                  <div className="propertyMdone-overlay-img">
+                    <img
+                      loading="lazy"
+                      className="img-fluid"
+                      src="/images/realEstate-img.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* card 2 */}
+              <div className="col-12 col-md-6 col-lg-6 mb-4">
+                <div className="propertyMdone-card mdc-2">
+                  <img
+                    loading="lazy"
+                    className="img-fluid"
+                    src="/images/ask.png"
+                    alt="img"
+                  />
+                  <h3>Законно ли е входът да има външна фирма за управление?</h3>
+                  <p>
+                    Да.
+                    ЗУЕС изрично позволява управлението на етажната собственост да бъде възложено на професионален домоуправител чрез договор, прието с решение на Общо събрание. Това гарантира, че всички дейности – събиране на такси, поддръжка, ремонти и отчетност – се извършват по закон.
+                  </p>
+                  <div className="propertyMdone-overlay-img">
+                    <img
+                      loading="lazy"
+                      className="img-fluid"
+                      src="/images/realEstate-img.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* card 3 */}
+              <div className="col-12 col-md-6 col-lg-6 mb-4">
+                <div className="propertyMdone-card mdc-3">
+                  <img
+                    loading="lazy"
+                    className="img-fluid"
+                    src="/images/ask.png"
+                    alt="img"
+                  />
+                  <h3>Как се гарантира прозрачност при управлението на парите?</h3>
+                  <p>
+                    Законът изисква ясно и отчетно управление на средствата на етажната собственост.
+                    Като професионален домоуправител, ние осигуряваме пълна финансова прозрачност – ясно разпределение на таксите, отчет за разходите и контрол върху средствата, включително във фонд „Ремонт и обновление“.
+                  </p>
+                  <div className="propertyMdone-overlay-img">
+                    <img
+                      loading="lazy"
+                      className="img-fluid"
+                      src="/images/realEstate-img.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* card 4 */}
+              <div className="col-12 col-md-6 col-lg-6 mb-4">
+                <div className="propertyMdone-card mdc-4">
+                  <img
+                    loading="lazy"
+                    className="img-fluid"
+                    src="/images/ask.png"
+                    alt="img"
+                  />
+                  <h3>Как професионалният домоуправител улеснява живота на собствениците?</h3>
+                  <p>
+                    Нашата задача е да бъдем връзката между закона и ежедневието във входа.
+                    Ние поемаме организацията, документацията и спазването на Закона за управление на етажната собственост, така че собствениците да не се занимават с административни проблеми и да живеят в поддържана и добре управлявана сграда.
+                  </p>
+                  <div className="propertyMdone-overlay-img">
+                    <img
+                      loading="lazy"
+                      className="img-fluid"
+                      src="/images/realEstate-img.png"
+                      alt="img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* advantages */}
+        <div className="section howitWorks">
+          <div className="container">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-12 col-md-8 col-lg-6">
+                <div className="section-main-heading">
+                  <h4>Предимства</h4>
+                  <h2>Предимството на ДомоМениджър</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row align-items-center justify-content-center mt-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                <div className="advantage-card">
+                  <div className="advantage-card-icon aci-1">
+                    <img
+                      loading="lazy"
+                      className="img-fluid"
+                      src="/images/return-of-investment.png"
+                      alt="img"
+                    />
+                  </div>
+                  <div className="advantage-card-body">
+                    <h3>
+                      <span>01. </span>По-малко грижи за собствениците
+                    </h3>
+                    <p>
+                      Ние организираме ежедневните задачи, за да имате повече време
+                      и спокойствие.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                <div className="advantage-card">
+                  <div className="advantage-card-icon aci-2">
+                    <img
+                      loading="lazy"
+                      className="img-fluid"
+                      src="/images/software.png"
+                      alt="img"
+                    />
+                  </div>
+                  <div className="advantage-card-body">
+                    <h3>
+                      <span>02. </span>Бързи реакции и ясна комуникация
+                    </h3>
+                    <p>
+                      Получавате навременни известия и информация за всяка заявка
+                      или дейност.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
+                <div className="advantage-card">
+                  <div className="advantage-card-icon aci-3">
+                    <img
+                      loading="lazy"
+                      className="img-fluid"
+                      src="/images/management.png"
+                      alt="img"
+                    />
+                  </div>
+                  <div className="advantage-card-body">
+                    <h3>
+                      <span>03. </span>Поддръжка, която се вижда
+                    </h3>
+                    <p>
+                      Чисти общи части, планирани ремонти и постоянна грижа за
+                      добрия вид на сградата.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* testimonial */}
         <div className="section testimonial">
           <div className="container">
@@ -1098,13 +1191,12 @@ export default function Home() {
                   <div className="row">
                     <div className="col-12 col-md-12 col-lg-6">
                       <div className="section-main-heading text-left">
-                        <h4 className="text-left">Testimonial</h4>
+                        <h4 className="text-left">Отзиви</h4>
                         <h2 className="text-left">
-                          What our customers are saying about ДомоМениджър
+                          Какво казват нашите клиенти за ДомоМениджър
                         </h2>
                         <p className="mt-3">
-                          Hear from our satisfied buyers, tenants, owners and
-                          dealers
+                          Реални впечатления от собственици и живеещи в сградите
                         </p>
                       </div>
                     </div>
@@ -1130,8 +1222,8 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from ДомоМениджър team who
-                                  tracks your property closely
+                                  Входът ни най-накрая е подреден, а комуникацията е
+                                  ясна и навременна.
                                 </p>
                               </div>
                             </div>
@@ -1153,8 +1245,8 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from ДомоМениджър team who
-                                  tracks your property closely
+                                  Реагират бързо при нужда и ни държат информирани за
+                                  всяка стъпка.
                                 </p>
                               </div>
                             </div>
@@ -1176,8 +1268,8 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from ДомоМениджър team who
-                                  tracks your property closely
+                                  Разходите са прозрачни, а общите части изглеждат
+                                  отлично през целия месец.
                                 </p>
                               </div>
                             </div>
@@ -1199,8 +1291,8 @@ export default function Home() {
                               </div>
                               <div className="testimonial-card-body">
                                 <p>
-                                  You get an exclusive RM from ДомоМениджър team who
-                                  tracks your property closely
+                                  Чувстваме се спокойни, защото поддръжката е в сигурни
+                                  ръце.
                                 </p>
                               </div>
                             </div>
@@ -1214,81 +1306,136 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* advantages */}
-        <div className="section howitWorks">
+        {/* property news */}
+        <div className="section propertyNews">
           <div className="container">
             <div className="row align-items-center justify-content-center">
               <div className="col-12 col-md-8 col-lg-6">
                 <div className="section-main-heading">
-                  <h4>Advantages</h4>
-                  <h2>The ДомоМениджър Advantage</h2>
+                  <h4>Всички нужди за вашия вход – на едно място</h4>
+                  <h2>Грижа за общите части, спокойствие за хората вътре.</h2>
                 </div>
               </div>
             </div>
-            <div className="row align-items-center justify-content-center mt-4">
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                <div className="advantage-card">
-                  <div className="advantage-card-icon aci-1">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/return-of-investment.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="advantage-card-body">
-                    <h3>
-                      <span>01. </span>Maximize Rental Returns
-                    </h3>
-                    <p>
-                      Verified Tenants. Cross platform advertising, including video
-                      marketing. Rental predictor tools to help maximize rents and
-                      minimize vacancies. Pay ONLY when tenanted.
-                    </p>
-                  </div>
+            <div className="row">
+              <div className="col-12 col-md-6 col-lg-6 mb-4">
+                <div className="propertynews-image">
+                  <img
+                    loading="lazy"
+                    className="img-fluid"
+                    src="/images/modern-apartment-architecture.jpg"
+                    alt="img"
+                  />
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                <div className="advantage-card">
-                  <div className="advantage-card-icon aci-2">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/software.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="advantage-card-body">
-                    <h3>
-                      <span>02. </span>Real-time Updates on Website
-                    </h3>
-                    <p>
-                      Verified Tenants. Cross platform advertising, including video
-                      marketing. Rental predictor tools to help maximize rents and
-                      minimize vacancies. Pay ONLY when tenanted.
-                    </p>
-                  </div>
+              <div className="col-12 col-md-6 offset-lg-1 col-lg-5 mb-4">
+                <div className="propertynews-main-content">
+                  <h4>ГРИЖА ЗА ВХОДА</h4>
+                  <h3>
+                    Подреден вход и
+                    <br /> доволни съседи
+                  </h3>
+                  <p>
+                    От почистване и поддръжка до комуникация
+                    <br />
+                    и организация на общите дейности
+                  </p>
+                  <a className="theme-btn btn-secondary" href="rental-property">
+                    Виж услугите
+                  </a>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 mb-4">
-                <div className="advantage-card">
-                  <div className="advantage-card-icon aci-3">
-                    <img
-                      loading="lazy"
-                      className="img-fluid"
-                      src="/images/management.png"
-                      alt="img"
-                    />
-                  </div>
-                  <div className="advantage-card-body">
-                    <h3>
-                      <span>03. </span>Assigned Service Managers
-                    </h3>
-                    <p>
-                      Verified Tenants. Cross platform advertising, including video
-                      marketing. Rental predictor tools to help maximize rents and
-                      minimize vacancies. Pay ONLY when tenanted.
-                    </p>
+            </div>
+            <div className="row align-items-center justify-content-center">
+              <div className="col-12 col-md-11 col-lg-11 col-xl-11">
+                <div className="propertynews-overlay">
+                  <div className="row">
+                    <div className="col-12 col-md-4 col-lg-4 col-xl-4">
+                      <div className="propertynews-overlay-left">
+                        <h3>Статии и съвети за собственици</h3>
+                        <p>Практични насоки за поддръжка, бюджет и добър ред</p>
+                      </div>
+                    </div>
+                    <div className="col-12 col-md-8 col-lg-8 col-xl-8">
+                      <div className="propertynews-overlay-right">
+                        <div className="row">
+                          <div className="col-12 col-md-12 col-lg-6 mb-4">
+                            <a href="#" className="propertynews-overlay-right-card">
+                              <div className="propertynews-orc-image">
+                                <img
+                                  loading="lazy"
+                                  className="img-fluid"
+                                  src="/images/blog-1.jpg"
+                                  alt="img"
+                                />
+                              </div>
+                              <div className="propertynews-orc-info">
+                                <h3>Годишен бюджет на входа без изненади</h3>
+                                <p>20 януари 2026</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="col-12 col-md-12 col-lg-6 mb-4">
+                            <a href="#" className="propertynews-overlay-right-card">
+                              <div className="propertynews-orc-image">
+                                <img
+                                  loading="lazy"
+                                  className="img-fluid"
+                                  src="/images/blog-2.jpg"
+                                  alt="img"
+                                />
+                              </div>
+                              <div className="propertynews-orc-info">
+                                <h3>Сезонна поддръжка: какво да не пропускате</h3>
+                                <p>20 януари 2026</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="col-12 col-md-12 col-lg-6 mb-4">
+                            <a href="#" className="propertynews-overlay-right-card">
+                              <div className="propertynews-orc-image">
+                                <img
+                                  loading="lazy"
+                                  className="img-fluid"
+                                  src="/images/blog-3.webp"
+                                  alt="img"
+                                />
+                              </div>
+                              <div className="propertynews-orc-info">
+                                <h3>Общи части, които правят добро впечатление</h3>
+                                <p>20 януари 2026</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="col-12 col-md-12 col-lg-6 mb-4">
+                            <a href="#" className="propertynews-overlay-right-card">
+                              <div className="propertynews-orc-image">
+                                <img
+                                  loading="lazy"
+                                  className="img-fluid"
+                                  src="/images/blog-4.webp"
+                                  alt="img"
+                                />
+                              </div>
+                              <div className="propertynews-orc-info">
+                                <h3>Фонд „Ремонт“ в действие: как работи</h3>
+                                <p>20 януари 2026</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div className="col-12 col-md-12 col-lg-12">
+                            <div className="propertynews-all-link">
+                              <a href="#">
+                                Виж всички статии и ръководства{" "}
+                                <span className="material-icons">
+                                  arrow_right_alt
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
