@@ -10,14 +10,36 @@ export default function OfferButton() {
     email: "",
     address: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">(
+    "idle"
+  );
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement form submission logic
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", phone: "", email: "", address: "" });
-    setIsOpen(false);
+    if (isSubmitting) return;
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+    try {
+      const response = await fetch("/api/offer", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+      setSubmitStatus("success");
+      setFormData({ name: "", phone: "", email: "", address: "" });
+      setTimeout(() => {
+        setIsOpen(false);
+        setSubmitStatus("idle");
+      }, 2000);
+    } catch (error) {
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -27,11 +49,19 @@ export default function OfferButton() {
     });
   };
 
+  const closeModal = () => {
+    setIsOpen(false);
+    setSubmitStatus("idle");
+  };
+
   return (
     <>
       {/* Floating Button */}
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={() => {
+          setSubmitStatus("idle");
+          setIsOpen(true);
+        }}
         className="offer-button"
         style={{
           position: "fixed",
@@ -83,7 +113,7 @@ export default function OfferButton() {
             alignItems: "center",
             justifyContent: "center"
           }}
-          onClick={() => setIsOpen(false)}
+          onClick={closeModal}
         >
           {/* Modal Content */}
           <div
@@ -101,7 +131,7 @@ export default function OfferButton() {
           >
             {/* Close Button */}
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={closeModal}
               style={{
                 position: "absolute",
                 top: "15px",
@@ -278,6 +308,16 @@ export default function OfferButton() {
               >
                 Изпрати заявка
               </button>
+              {submitStatus === "success" && (
+                <p style={{ marginTop: "12px", color: "#1b7f5a", fontSize: "14px" }}>
+                    Благодарим! Заявката е изпратена успешно.
+                </p>
+              )}
+              {submitStatus === "error" && (
+                <p style={{ marginTop: "12px", color: "#c0392b", fontSize: "14px" }}>
+                    Възникна грешка при изпращането. Опитайте отново.
+                </p>
+              )}
             </form>
           </div>
         </div>
